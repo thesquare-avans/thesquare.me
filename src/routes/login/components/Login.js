@@ -36,35 +36,20 @@ class Login extends React.Component {
               <fieldset>
                 <div className="form-group">
                   <TextField
-                    floatingLabelText="Email"
+                    floatingLabelText="Username"
                     floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
                     underlineFocusStyle={styles.underlineStyle}
                     fullWidth
                   />
                 </div>
-                <div className="form-group">
-                  <TextField
-                    floatingLabelText="Password"
-                    type="password"
-                    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
-                    underlineFocusStyle={styles.underlineStyle}
-                    fullWidth
-                    />
-                </div>
+
               </fieldset>
             </form>
           </div>
           <div className="card-action no-border text-right">
-            <a href="#/" className="color-success">Login</a>
+            <a href="#/" className="color-success">Explorer</a>
           </div>
         </div>
-
-        <div className="additional-info">
-          <a href="#/sign-up">Sign up</a>
-          <span className="divider-h" />
-          <a href="#/forgot-password">Forgot your password?</a>
-        </div>
-
       </div>
     );
   }
