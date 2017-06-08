@@ -3,28 +3,71 @@ import Header from 'components/Header';
 import Sidenav from 'components/Sidenav';
 import Footer from 'components/Footer';
 import QueueAnim from 'rc-queue-anim';
-import { DefaultPlayer as Video } from 'react-html5video';
+import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
+
+const Streams = [
+  {
+    id : 0,
+    user: "Thomas",
+    source : {
+      url: "http://dl1.webmfiles.org/big-buck-bunny_trailer.webm",
+      type: "video/webm"
+    }
+  },
+  {
+    id : 1,
+    user: "Thomas",
+    source : {
+      url: "http://localhost:8000/assets/trailer.webm",
+      type: "video/webm"
+    }
+  },
+  {
+    id : 2,
+    user: "Thomas",
+    source : {
+      url: "http://dl1.webmfiles.org/big-buck-bunny_trailer.webm",
+      type: "video/webm"
+    }
+  }
+];
+
+const StreamBox = () => (
+  <div className="row">
+    {Streams.map(stream => {
+      return (
+        <div className="col-xl-6" key={stream.id}>
+          <VideoPlayer autoPlay loop muted>
+            <source src={stream.source.url} type={stream.source.type} />
+          </VideoPlayer>
+        </div>
+      )}
+    )}
+  </div>
+)
 
 const Main = () => (
   <div className="row">
     <div className="col-xl-6">
-      <div className="box box-default">
-        <div className="box-body video">
-          <Video autoPlay loop muted controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}>
-            <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
-          </Video>
-        </div>
-      </div>
+      <VideoPlayer autoPlay loop muted>
+        <source src="http://dl1.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm" />
+      </VideoPlayer>
     </div>
     <div className="col-xl-6">
-      <div className="box box-default">
-        <div className="box-body video">
-          <Video autoPlay loop muted controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}>
-            <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
-          </Video>
-        </div>
-      </div>
+      <VideoPlayer autoPlay loop muted>
+        <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
+      </VideoPlayer>
+    </div>
+    <div className="col-xl-6">
+      <VideoPlayer autoPlay loop muted>
+        <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
+      </VideoPlayer>
+    </div>
+    <div className="col-xl-6">
+      <VideoPlayer autoPlay loop muted>
+        <source src="http://dl1.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm" />
+      </VideoPlayer>
     </div>
   </div>
 )
@@ -45,7 +88,7 @@ class Home extends React.Component {
               <div className="full-height">
                 <div className="container-fluid no-breadcrumbs page-dashboard">
                   <QueueAnim type="bottom" className="ui-animate">
-                    <Main />
+                    <StreamBox />
                   </QueueAnim>
                 </div>
               </div>
