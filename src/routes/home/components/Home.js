@@ -45,7 +45,7 @@ const StreamBox = () => (
       )}
     )}
   </div>
-)
+);
 
 const Main = () => (
   <div className="row">
@@ -70,7 +70,7 @@ const Main = () => (
       </VideoPlayer>
     </div>
   </div>
-)
+);
 
 class Home extends React.Component {
   render() {
