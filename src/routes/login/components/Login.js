@@ -27,8 +27,6 @@ class Login extends React.Component {
   componentWillUnmount() {
     if(this.state.username !== "" && localStorage.getItem("name") === null) {
       localStorage.setItem("name", this.state.username);
-
-
     }
   }
 
@@ -61,7 +59,6 @@ class Login extends React.Component {
           <div className="card-action no-border text-right">
             <a href="#/" className="color-success" onClick={
               (e) => {
-
 
               }
             }>Explore</a>

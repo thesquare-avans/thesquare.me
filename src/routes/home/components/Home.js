@@ -6,6 +6,8 @@ import QueueAnim from 'rc-queue-anim';
 import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
 
+import TransportSecurity from "../../../lib/TranstportSecurity"
+
 let Streams = [
   {
     id : 0,
@@ -73,6 +75,15 @@ const Main = () => (
 );
 
 class Home extends React.Component {
+  componentWillMount() {
+    if(!TransportSecurity.checkIfUserExists) {
+      TransportSecurity.generateKeys(localStorage.getItem("name"), function (e) {
+        console.log(e)
+      })
+    }
+    TransportSecurity.checkIfUserExists()
+  }
+
   render() {
     const { children, location } = this.props;
 
