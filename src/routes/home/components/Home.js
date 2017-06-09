@@ -6,7 +6,7 @@ import QueueAnim from 'rc-queue-anim';
 import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
 
-const Streams = [
+let Streams = [
   {
     id : 0,
     user: "Thomas",

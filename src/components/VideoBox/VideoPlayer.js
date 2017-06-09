@@ -10,7 +10,12 @@ import FontIcon from 'material-ui/FontIcon';
 
 import {green500} from 'material-ui/styles/colors'
 
-let PLAYING = false;
+import Websocket from 'react-websocket';
+
+let metadata = {
+  user : "Thomas",
+  viewers : 100,
+}
 
 const style = {
   floatButtonMute : {
@@ -20,6 +25,7 @@ const style = {
     margin : 4,
   }
 }
+
 
 const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
 
@@ -32,48 +38,43 @@ const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
         </div>
         <div className="top-right">
           {!video.paused && <a href="#" onClick={(e) => {
-
             e.preventDefault();
-            // You can do what you like with the HTMLMediaElement DOM element also.
-
             videoEl.pause();
-            PLAYING = false;
           }}>
             Pause video
           </a>}
           {video.paused && <a href="#" onClick={(e) => {
-
             e.preventDefault();
-            // You can do what you like with the HTMLMediaElement DOM element also.
             videoEl.play();
-            PLAYING = true;
           }}>
             Play video
           </a>}
         </div>
         <div className="bottom-left">
+          <Websocket url="ws://localhost:8888/" onMessage={function(data){
+            metadata.viewers = JSON.parse(data).viewers
+          }}/>
           <Chip style={style.chip}>
             <Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />
-            100
+            { metadata.viewers }
           </Chip>
         </div>
         <div className="bottom-right">
-          <FloatingActionButton mini={true} backgroundColor={style.floatButtonMute.backgroundColor} onTouchTap={function (e) {
-            e.preventDefault();
-            if(video.muted) {
-              videoEl.muted = false;
-            }else {
-              videoEl.muted = true;
-            }
-
-          }}>
+          <FloatingActionButton
+            mini={true}
+            backgroundColor={style.floatButtonMute.backgroundColor}
+            onTouchTap={function (e) {
+              e.preventDefault();
+              videoEl.muted = !video.muted;
+            }}
+          >
             {video.muted && <AvVolumeOff />}
             {!video.muted && <AvVolumeUp />}
           </FloatingActionButton>
         </div>
       </div>
 
-      <video {...restProps}>
+      <video {...restProps}>.
         { children }
       </video>
 
