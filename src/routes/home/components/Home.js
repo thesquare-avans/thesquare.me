@@ -7,6 +7,21 @@ import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
 
 import TransportSecurity from "../../../lib/TranstportSecurity"
+import {Divider, FlatButton, RaisedButton, TextField} from "material-ui";
+import {green500} from 'material-ui/styles/colors';
+
+const styles = {
+  floatingLabelFocusStyle: {
+    color: green500,
+  },
+  underlineStyle: {
+    borderColor: green500,
+  }
+};
+
+let Active = {
+  id: 3
+}
 
 let Streams = [
   {
@@ -32,20 +47,61 @@ let Streams = [
       url: "http://dl1.webmfiles.org/big-buck-bunny_trailer.webm",
       type: "video/webm"
     }
-  }
+  },
+  {
+    id : 3,
+    user: "Thomas",
+    source : {
+      url: "http://localhost:8000/assets/trailer.webm",
+      type: "video/webm"
+    }
+  },
 ];
 
 const StreamBox = () => (
-  <div className="row">
-    {Streams.map(stream => {
-      return (
-        <div className="col-xl-6" key={stream.id}>
-          <VideoPlayer autoPlay loop muted>
-            <source src={stream.source.url} type={stream.source.type} />
-          </VideoPlayer>
+  <div>
+    <div className="row">
+      <div className="col-xl-6 offset-1">
+        <VideoPlayer autoPlay loop muted>
+          <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
+        </VideoPlayer>
+      </div>
+      <div className="col-xl-3">
+        <div className="box box-default">
+          <div className="box-body chat">
+            <div className="row">
+              <div className="col-xl-12 chatBox">
+
+              </div>
+            </div>
+            <Divider/>
+            <div className="row">
+              <div className="col-xl-12">
+                <TextField
+                  fullWidth
+                  floatingLabelText="Chat"
+                  floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                  underlineFocusStyle={styles.underlineStyle} />
+                <div className="pull-right">
+                  <FlatButton label="Send"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div className="row">
+      {Streams.map(stream => {
+        return (
+          <div className="col-xl-3 " key={stream.id}>
+            <VideoPlayer autoPlay loop muted>
+              <source src={stream.source.url} type={stream.source.type} />
+            </VideoPlayer>
+          </div>
+        )}
       )}
-    )}
+    </div>
   </div>
 );
 
