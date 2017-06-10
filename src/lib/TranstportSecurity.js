@@ -47,18 +47,8 @@ class TranstportSecurity {
   }
 
   static register(callback) {
-    // if (!localStorage.getItem("name")) {
-    //   let name = "";
-    //
-    //   while (typeof name !== "string" || name.length === 0) {
-    //     name = window.prompt("It looks like you are new. Please enter your name to register.");
-    //   }
-    //
-    //   localStorage.setItem("name", "name");
-    // }
-
     let name = localStorage.getItem("name");
-    let signedMessage = this.signMessage({
+    let signedMessage = TranstportSecurity.signMessage({
       name: name
     });
 
@@ -87,8 +77,6 @@ class TranstportSecurity {
       });
 
       request.catch(function (error) {
-        console.log(error);
-
         let payload = TranstportSecurity.verifyMessage(error.data);
 
         if (payload) {
@@ -138,8 +126,6 @@ class TranstportSecurity {
     });
 
     request.catch(function (error) {
-      console.log(JSON.stringify(error));
-
       let payload = TranstportSecurity.verifyMessage(error.response.data);
 
       if(payload) {
@@ -148,7 +134,7 @@ class TranstportSecurity {
             callback(new Error("Public key was not sent with request"));
             break;
           case "userNotFound":
-            this.register(callback);
+            TranstportSecurity.register(callback);
             break;
           default:
             callback(new Error("Unexpected error"));
@@ -165,7 +151,7 @@ class TranstportSecurity {
       localStorage.setItem("publicKey", forge.pki.publicKeyToPem(keypair.publicKey));
       localStorage.setItem("privateKey", forge.pki.privateKeyToPem(keypair.privateKey));
 
-      this.register(name ,callback);
+      TranstportSecurity.register(callback);
     });
   }
 }

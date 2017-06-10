@@ -131,13 +131,9 @@ const Main = () => (
 );
 
 class Home extends React.Component {
+
   componentWillMount() {
-    if(!TransportSecurity.checkIfUserExists) {
-      TransportSecurity.generateKeys(localStorage.getItem("name"), function (e) {
-        console.log(e)
-      })
-    }
-    TransportSecurity.checkIfUserExists()
+
   }
 
   render() {
