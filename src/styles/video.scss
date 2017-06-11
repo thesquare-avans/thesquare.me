@@ -59,18 +59,28 @@ $margin : 5px;
   }
 
   &.chat {
-    height: 100%;
-    > .chatBox {
-      > .item {
-        &.me {
-          float: right;
-        }
+    height: calc(100% - 50px);
+    > div.row {
+      > div.col-xl-12 {
+        > ul.chatBox {
+          list-style: none;
+          padding: 0;
 
-        &.them {
-          float: left;
+          > li.me {
+            > span {
+              width: 5%;
+              color: #4caf50;
+            }
+          }
+
+          > li.them {
+            > span {
+              width: 5%;
+              color: #4caf50;
+            }
+          }
         }
       }
-      height: 100%;
     }
   }
 }

@@ -59,17 +59,12 @@ let Streams = [
 ];
 
 const ChatItem = (props) => (
-  <ListItem
-    disableKeyboardFocus={true}
-    secondaryTextLines={2}
-    secondaryText={
-      <p>
-        {props.me && <span style={{color: darkBlack}}><strong>{props.user}</strong></span>}
-        {!props.me && <span style={{color: darkBlack}}>{props.user}</span>}
-        : {props.message}
-      </p>
-    }
-  />
+  <div>
+    <li className="me">
+      <span style={{ color: green500 }}><strong>{props.username}</strong></span>
+      : {props.text}
+    </li>
+  </div>
 )
 
 const StreamBox = () => (
@@ -84,14 +79,23 @@ const StreamBox = () => (
         <div className="box box-default">
           <div className="box-body chat">
             <div className="row">
-              <List>
-                <ChatItem me={false} user="Thomas" message="Hai"/>
-                <ChatItem me={true} user="Thomas" message="Hai"/>
-              </List>
-            </div>
-            <Divider/>
-            <div className="row">
               <div className="col-xl-12">
+                <ul className="chatBox" style={{ padding: 0}}>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+
+                </ul>
                 <TextField
                   fullWidth
                   floatingLabelText="Chat"
