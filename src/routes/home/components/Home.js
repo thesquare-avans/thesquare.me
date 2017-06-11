@@ -7,8 +7,8 @@ import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
 
 import TransportSecurity from "../../../lib/TranstportSecurity"
-import {Divider, FlatButton, RaisedButton, TextField} from "material-ui";
-import {green500} from 'material-ui/styles/colors';
+import {Divider, FlatButton, List, ListItem, RaisedButton, TextField} from "material-ui";
+import {darkBlack, green500} from 'material-ui/styles/colors';
 
 const styles = {
   floatingLabelFocusStyle: {
@@ -58,6 +58,20 @@ let Streams = [
   },
 ];
 
+const ChatItem = (props) => (
+  <ListItem
+    disableKeyboardFocus={true}
+    secondaryTextLines={2}
+    secondaryText={
+      <p>
+        {props.me && <span style={{color: darkBlack}}><strong>{props.user}</strong></span>}
+        {!props.me && <span style={{color: darkBlack}}>{props.user}</span>}
+        : {props.message}
+      </p>
+    }
+  />
+)
+
 const StreamBox = () => (
   <div>
     <div className="row">
@@ -70,9 +84,10 @@ const StreamBox = () => (
         <div className="box box-default">
           <div className="box-body chat">
             <div className="row">
-              <div className="col-xl-12 chatBox">
-
-              </div>
+              <List>
+                <ChatItem me={false} user="Thomas" message="Hai"/>
+                <ChatItem me={true} user="Thomas" message="Hai"/>
+              </List>
             </div>
             <Divider/>
             <div className="row">

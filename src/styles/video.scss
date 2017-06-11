@@ -61,7 +61,16 @@ $margin : 5px;
   &.chat {
     height: 100%;
     > .chatBox {
+      > .item {
+        &.me {
+          float: right;
+        }
 
+        &.them {
+          float: left;
+        }
+      }
+      height: 100%;
     }
   }
 }
