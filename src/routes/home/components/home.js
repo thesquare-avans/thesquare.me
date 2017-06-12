@@ -60,7 +60,8 @@ let Streams = [
 
 const ChatItem = (props) => (
   <div>
-    <li className="me">
+
+    <li className={props.me}>
       <span style={{ color: green500 }}><strong>{props.username}</strong></span>
       : {props.text}
     </li>
@@ -92,8 +93,8 @@ const StreamBox = () => (
                   <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
                   <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
                   <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={false} text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem me={false} text="Hoi dit is een test" username="Thomas"/>
 
                 </ul>
                 <TextField

@@ -21,19 +21,13 @@ function scrollToTop() {
 const rootRoute = {
   childRoutes: [{
     path: '/',
-    component: require('./containers/App'),
+    component: require('./containers/app'),
     indexRoute: { onEnter: (nextState, replace) => replace('/home') },
     childRoutes: [
-      require('./routes/app'),
       require('./routes/404'),
       require('./routes/500'),
-      require('./routes/confirmEmail'),
-      require('./routes/forgotPassword'),
-      require('./routes/lockScreen'),
       require('./routes/login'),
       require('./routes/home'),
-      require('./routes/signUp'),
-      require('./routes/fullscreen'),
       {
         path: '*',
         indexRoute: { onEnter: (nextState, replace) => replace('/404') },
