@@ -72,7 +72,7 @@ class ChatBox extends React.Component {
         <div className="box-body chat">
           <div className="row">
             <div className="col-xl-12">
-              <ul className="chatBox" style={{ padding: 0}}>
+              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll"}}>
                 {this.state.messages.map(msg => {
                   return(
                     <ChatItem className={msg.person} text={msg.message} username={msg.username} key={msg.uuid}/>

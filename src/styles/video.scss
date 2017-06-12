@@ -78,8 +78,15 @@ $margin : 5px;
     > div.row {
       > div.col-xl-12 {
         > ul.chatBox {
+
           list-style: none;
           padding: 0;
+
+          min-height: 33em;
+          max-height: 33em;
+          overflow-y: auto;
+
+          scroll-snap-type: x mandatory;
 
           > li.me {
             > span.username {
