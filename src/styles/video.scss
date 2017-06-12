@@ -82,8 +82,9 @@ $margin : 5px;
           padding: 0;
 
           > li.me {
-            > span {
+            > span.username {
               color: #4caf50;
+              font-weight: bold;
             }
           }
 

@@ -4,21 +4,8 @@ import Sidenav from 'components/Sidenav';
 import Footer from 'components/Footer';
 import QueueAnim from 'rc-queue-anim';
 import VideoPlayer from 'components/VideoBox/VideoPlayer'
+import ChatBox from 'components/ChatBox/ChatBox'
 import 'react-html5video/dist/styles.css';
-
-import {Divider, FlatButton, List, ListItem, RaisedButton, TextField} from "material-ui";
-import {darkBlack, green500} from 'material-ui/styles/colors';
-
-const styles = {
-  button : {
-    floatingLabelFocusStyle: {
-      color: green500,
-    },
-    underlineStyle: {
-      borderColor: green500,
-    }
-  }
-};
 
 let Active = {
   id: 3
@@ -59,16 +46,6 @@ let Streams = [
   },
 ];
 
-const ChatItem = (props) => (
-  <div>
-
-    <li className={props.me}>
-      <span style={{ color: green500 }}><strong>{props.username}</strong></span>
-      : {props.text}
-    </li>
-  </div>
-)
-
 const StreamBox = () => (
   <div>
     <div className="row">
@@ -78,34 +55,7 @@ const StreamBox = () => (
         </VideoPlayer>
       </div>
       <div className="col-xl-5 row-eq-height">
-        <div className="box box-default" style={{width: "100%"}}>
-          <div className="box-body chat">
-            <div className="row">
-              <div className="col-xl-12">
-                <ul className="chatBox" style={{ padding: 0}}>
-                  <ChatItem className="me" text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem className="me" text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
-                </ul>
-                <Divider />
-                <div className="bottom">
-                  <TextField
-                    floatingLabelText="Chat"
-                    className="input-chat"
-                    style={{width: "70%"}}
-                    floatingLabelFocusStyle={styles.button.floatingLabelFocusStyle}
-                    underlineFocusStyle={styles.button.underlineStyle} />
-                  <RaisedButton label="Send" style={{width: "10%", marginLeft: "20px"}}/>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-
-            </div>
-          </div>
-        </div>
+        <ChatBox />
       </div>
     </div>
     <div className="row">
