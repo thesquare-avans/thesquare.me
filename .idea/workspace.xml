@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="">
+    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="ChatBox is mostly done. Can be integrated into the site when the api is finished. For now a simple echo server. See slack">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" afterPath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" afterPath="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/Config.js" afterPath="$PROJECT_DIR$/src/constants/Config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +21,8 @@
       <file leaf-file-name="VideoPlayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+            <state relative-caret-position="884">
+              <caret line="64" column="43" lean-forward="false" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -37,7 +33,7 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
+            <state relative-caret-position="1580">
               <caret line="121" column="26" lean-forward="false" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -46,24 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatBox.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="95" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EcmaScript.js" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <file leaf-file-name="ChatBox.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="132" column="42" lean-forward="true" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-              <folding />
+              <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +99,7 @@
       <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="1394">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
@@ -177,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,6 +198,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,7 +349,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,278 +365,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Sites\thesquare.me\src\lib" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/client.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/Header/NavRightList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/lib/TranstportSecurity.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/login/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/styles/video.scss</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/containers/app.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/home/components/home.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/login/components/login.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/containers/App.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/components/MainApp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/bar/components/Bar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/bar/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/funnel/components/Funnel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/funnel/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/line/components/Line.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/line/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/more/components/More.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/more/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/pie/components/Pie.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/pie/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/radar/components/Radar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/radar/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/scatter/components/Scatter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/charts/routes/scatter/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/AquisitionChart.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/BenchmarkChart.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/Dashboard.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/EngagementStats.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/KPIsChart.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/components/StatBoxes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/dashboard/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/horizontalProducts/components/HorizontalProducts.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/horizontalProducts/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/invoice/components/Invoice.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/invoice/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/products/components/Products.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ecommerce/routes/products/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/AutoComplete.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Checkbox.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Chip.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/DatePicker.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Dialog.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Elements.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/RadioButton.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/SelectField.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Slider.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/TextField.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/TimePicker.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/components/Toggle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/elements/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/layouts/components/Layouts.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/layouts/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/components/HonrizontalNonLinear.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/components/HorizontalLinear.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/components/Steppers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/components/VerticalLinear.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/components/VerticalNonLinear.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/forms/routes/steppers/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pageLayouts/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pageLayouts/routes/centered/components/Centered.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pageLayouts/routes/centered/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pageLayouts/routes/fullWidth/components/FullWidth.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pageLayouts/routes/fullWidth/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/about/components/About.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/about/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/blog/components/Blog.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/blog/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/careers/components/Careers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/careers/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/contact/components/Contact.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/contact/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/faqs/components/FAQs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/faqs/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/services/components/Services.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/services/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/terms/components/Terms.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/pages/routes/terms/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/data/components/DataTables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/data/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/responsive/components/ResponsiveTables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/responsive/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/static/components/StaticTables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/tables/routes/static/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/boxes/components/Boxes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/boxes/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/buttons/components/Buttons.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/buttons/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/callToActions/components/CallToActions.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/callToActions/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/cards/components/Cards.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/cards/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/colors/components/Colors.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/colors/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Avatar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Badge.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/BottomNavigation.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Callout.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Components.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Paper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Popover.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Progress.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Ribbon.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Snackbar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Subheader.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Tabs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/components/Toolbar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/components/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/featureCallouts/components/FeatureCallouts.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/featureCallouts/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/grids/components/Grids.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/grids/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/hover/components/Hover.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/hover/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/components/IconBoxes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/icons/components/Icons.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/icons/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Chat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Contacts.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Folder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Lists.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Messages.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Nested.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Phone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Selectable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Settings.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/components/Simple.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/lists/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/menus/components/DropdownMenu.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/menus/components/IconMenu.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/menus/components/Menu.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/menus/components/Menus.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/menus/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/pricingTables/components/PricingTables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/pricingTables/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/sashes/components/Sashes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/sashes/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/testimonials/components/Testimonials.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/testimonials/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/timeline/components/Timeline.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/timeline/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/components/Typography.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/confirmEmail/components/ConfirmEmail.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/confirmEmail/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/forgotPassword/components/ForgotPassword.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/forgotPassword/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/fullscreen/components/Fullscreen.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/fullscreen/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/home/components/Home.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/lockScreen/components/LockScreen.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/lockScreen/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/login/components/Login.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/signUp/components/SignUp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/signUp/index.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -708,7 +498,8 @@
       <workItem from="1497122817335" duration="190000" />
       <workItem from="1497123249061" duration="4085000" />
       <workItem from="1497210169362" duration="3246000" />
-      <workItem from="1497275622378" duration="3186000" />
+      <workItem from="1497275622378" duration="4392000" />
+      <workItem from="1497288037966" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="Started on the register/login page.">
       <created>1497028975625</created>
@@ -759,27 +550,34 @@
       <option name="project" value="LOCAL" />
       <updated>1497276514580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementation of socket.io for the chat. Works kinda. Need a proper back-end to finish it.">
+      <created>1497278864978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1497278864978</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36653000" />
+    <option name="totallyTimeSpent" value="41454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30877572" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1928494" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -803,7 +601,9 @@
     <MESSAGE value="Some work on the chat design" />
     <MESSAGE value="A idea of a chat. Not happy atm. Need alot of work" />
     <MESSAGE value="Some code clean up. Starting on the chat functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some code clean up. Starting on the chat functionality" />
+    <MESSAGE value="Implementation of socket.io for the chat. Works kinda. Need a proper back-end to finish it." />
+    <MESSAGE value="ChatBox is mostly done. Can be integrated into the site when the api is finished. For now a simple echo server. See slack" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChatBox is mostly done. Can be integrated into the site when the api is finished. For now a simple echo server. See slack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,31 +612,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/components/MainApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Sidenav/SidenavContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -886,27 +662,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/components/MainApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/components/MainApp.js" />
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Sidenav/SidenavContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -932,13 +693,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/signUp/components/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/signUp/components/SignUp.js" />
     <entry file="file://$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -949,13 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Sidenav/SidenavContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -1007,20 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-mute.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-off.js" />
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/components/Typography.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/components/Typography.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/jsrsasign/lib/jsrsasign.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1042,13 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/signUp/components/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/signUp/components/SignUp.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1057,13 +788,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/iconBoxes/index.js" />
     <entry file="file://$PROJECT_DIR$/src/lib/forge.all.js" />
     <entry file="file://$PROJECT_DIR$/src/lib/forge.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1079,16 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -1097,17 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/app/components/MainApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/app/components/MainApp.js" />
     <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="1394">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
@@ -1117,6 +825,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="2023" column="8" lean-forward="false" selection-start-line="2023" selection-start-column="8" selection-end-line="2023" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/browser-sync/node_modules/socket.io-client/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="64" column="43" lean-forward="false" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1129,10 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/browser-sync/node_modules/socket.io-client/lib/index.js">
+    <entry file="file://$PROJECT_DIR$/src/constants/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1147,17 +880,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/Config.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="95" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
+        <state relative-caret-position="1580">
           <caret line="121" column="26" lean-forward="false" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1165,28 +898,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack-dev-server/client/web_modules/jquery/jquery-1.8.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="402">
+          <caret line="3629" column="6" lean-forward="false" selection-start-line="3629" selection-start-column="6" selection-end-line="3629" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react/lib/ReactComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="132" column="42" lean-forward="true" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="198">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
