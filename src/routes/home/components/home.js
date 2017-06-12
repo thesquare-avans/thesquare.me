@@ -6,16 +6,17 @@ import QueueAnim from 'rc-queue-anim';
 import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import 'react-html5video/dist/styles.css';
 
-import TransportSecurity from "../../../lib/TranstportSecurity"
 import {Divider, FlatButton, List, ListItem, RaisedButton, TextField} from "material-ui";
 import {darkBlack, green500} from 'material-ui/styles/colors';
 
 const styles = {
-  floatingLabelFocusStyle: {
-    color: green500,
-  },
-  underlineStyle: {
-    borderColor: green500,
+  button : {
+    floatingLabelFocusStyle: {
+      color: green500,
+    },
+    underlineStyle: {
+      borderColor: green500,
+    }
   }
 };
 
@@ -71,41 +72,37 @@ const ChatItem = (props) => (
 const StreamBox = () => (
   <div>
     <div className="row">
-      <div className="col-xl-6 offset-1">
+      <div className="col-xl-7 row-eq-height">
         <VideoPlayer autoPlay loop muted>
           <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
         </VideoPlayer>
       </div>
-      <div className="col-xl-3">
-        <div className="box box-default">
+      <div className="col-xl-5 row-eq-height">
+        <div className="box box-default" style={{width: "100%"}}>
           <div className="box-body chat">
             <div className="row">
               <div className="col-xl-12">
                 <ul className="chatBox" style={{ padding: 0}}>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={true} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={false} text="Hoi dit is een test" username="Thomas"/>
-                  <ChatItem me={false} text="Hoi dit is een test" username="Thomas"/>
-
+                  <ChatItem className="me" text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem className="me" text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
+                  <ChatItem className="them" text="Hoi dit is een test" username="Thomas"/>
                 </ul>
-                <TextField
-                  fullWidth
-                  floatingLabelText="Chat"
-                  floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
-                  underlineFocusStyle={styles.underlineStyle} />
-                <div className="pull-right">
-                  <FlatButton label="Send"/>
+                <Divider />
+                <div className="bottom">
+                  <TextField
+                    floatingLabelText="Chat"
+                    className="input-chat"
+                    style={{width: "70%"}}
+                    floatingLabelFocusStyle={styles.button.floatingLabelFocusStyle}
+                    underlineFocusStyle={styles.button.underlineStyle} />
+                  <RaisedButton label="Send" style={{width: "10%", marginLeft: "20px"}}/>
                 </div>
               </div>
+            </div>
+            <div className="row">
+
             </div>
           </div>
         </div>
@@ -169,7 +166,7 @@ class Home extends React.Component {
           <div className="app-content-wrapper">
             <div className="app-content">
               <div className="full-height">
-                <div className="container-fluid no-breadcrumbs page-dashboard">
+                <div className="container-fluid no-breadcrumbs">
                   <QueueAnim type="bottom" className="ui-animate">
                     <StreamBox />
                   </QueueAnim>

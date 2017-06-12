@@ -27,13 +27,7 @@ class NavRightList extends React.Component {
 
   render() {
     return (
-      <ul className="list-unstyled float-right">
-          <li style={{marginRight: '10px'}}>
-
-            title={<span style={styles.title}>Title</span>}
-            
-        </li>
-      </ul>
+      <div></div>
     );
   }
 }

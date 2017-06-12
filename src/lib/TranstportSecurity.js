@@ -154,6 +154,10 @@ class TranstportSecurity {
       TranstportSecurity.register(callback);
     });
   }
+
+  static loadConfig() {
+
+  }
 }
 
 module.exports = TranstportSecurity;

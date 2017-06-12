@@ -1,5 +1,17 @@
 $margin : 5px;
 
+.row-eq-height {
+  display:  -webkit-box;
+  display: -webkit-flex;
+  display:  -ms-flexbox;
+  display:         flex;
+}
+
+.bottom {
+  position: relative !important;
+  bottom: 0;
+}
+
 .box-body {
 
   &.video {
@@ -14,7 +26,10 @@ $margin : 5px;
     }
 
     > .controls {
-      display: flex;
+      display:  -webkit-box;
+      display: -webkit-flex;
+      display:  -ms-flexbox;
+      display:         flex;
 
       > .top-left {
         position: absolute;
@@ -51,6 +66,7 @@ $margin : 5px;
 
         margin: $margin;
       }
+
       > div {
         z-index: 100 !important;
       }
@@ -59,7 +75,6 @@ $margin : 5px;
   }
 
   &.chat {
-    height: calc(100% - 50px);
     > div.row {
       > div.col-xl-12 {
         > ul.chatBox {
@@ -68,14 +83,12 @@ $margin : 5px;
 
           > li.me {
             > span {
-              width: 5%;
               color: #4caf50;
             }
           }
 
           > li.them {
             > span {
-              width: 5%;
               color: #4caf50;
             }
           }
