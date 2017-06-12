@@ -51,9 +51,6 @@ const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
           </a>}
         </div>
         <div className="bottom-left">
-          <Websocket url="ws://localhost:8888/" onMessage={function(data){
-            metadata.viewers = JSON.parse(data).viewers
-          }}/>
           <Chip style={style.chip}>
             <Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />
             { metadata.viewers }
