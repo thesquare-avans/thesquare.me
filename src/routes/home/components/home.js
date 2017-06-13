@@ -101,11 +101,15 @@ const Main = () => (
 class Home extends React.Component {
 
   componentWillMount() {
-    console.log(Streams.all())
+
   }
 
   render() {
     const { children, location } = this.props;
+
+    Streams.all(function (streams) {
+      console.log(streams);
+    })
 
     return (
       <div className="main-app-container">

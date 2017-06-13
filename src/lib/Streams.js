@@ -2,12 +2,18 @@ import axios from "axios"
 import TranstportSecurity from "./TranstportSecurity";
 
 const BASE_URL = "http://api.thesquare.me/v1";
+let data = {};
 
 class Streams {
 
-  static all() {
-    if(TranstportSecurity.checkIfKeysExists()) {
-      let config = {
+  constructor() {
+
+  }
+
+  static all(callback) {
+
+
+    let config = {
         headers: {
           'X-PublicKey': btoa(localStorage.getItem("publicKey")),
           'Content-Type': "application/json; charset=utf-8"
@@ -17,18 +23,19 @@ class Streams {
       let request = axios.get(`${BASE_URL}/streams`, config);
 
       request.then(function(response) {
-        console.log(response);
         let payload = TranstportSecurity.verifyMessage(response.data);
-
-        if(payload && payload.success) {
-          return payload;
+        if(payload) {
+          if(payload.success) {
+            return callback(payload)
+          }
         }
       });
 
       request.catch(function(error) {
         throw error;
       });
-    }
+
+      return data;
   }
 
   static get() {
