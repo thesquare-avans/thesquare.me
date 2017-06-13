@@ -1,9 +1,8 @@
 import * as React from "react";
 import {Divider, RaisedButton, TextField} from "material-ui";
-import { Scrollbars } from 'react-custom-scrollbars';
 import {green500} from "material-ui/styles/colors";
 import io from 'socket.io-client'
-import * as ReactDOM from "react-dom";
+
 let chatRoom = "0";
 
 let messages = [];
@@ -23,7 +22,7 @@ const styles = {
 };
 
 let socket = io('ws://localhost:3000');
-let room = null;
+
 const ChatItem = (props) => (
   <li className={props.className}>
     <span className="username">{props.username}</span>: {props.text}
@@ -44,13 +43,8 @@ class ChatBox extends React.Component {
     });
   }
 
-  scrollToBottom(message) {
-    const node = ReactDOM.findDOMNode(message);
-    node.scrollIntoView({ behavior: "smooth" });
-  }
-
   handleSubmit(e) {
-    let data = {username: "Thomas", message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
+    let data = {username: JSON.parse(localStorage.getItem("user")).name, message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
     socket.emit("client:new_msg", data);
     let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
 
@@ -76,11 +70,6 @@ class ChatBox extends React.Component {
     socket.on('server:new_msg', data => {
       let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
-    });
-
-    socket.on('server:created_room', data => {
-      room = data.uuid;
-      socket.join(room);
     });
   }
 

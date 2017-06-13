@@ -83,7 +83,7 @@ $margin : 5px;
           padding: 0;
 
           min-height: 17.5em;
-          max-height: 17.5em;
+          max-height: inherit;
           overflow-y: auto;
 
           scroll-snap-type: x mandatory;
@@ -98,6 +98,13 @@ $margin : 5px;
           > li.them {
             > span {
               color: #4caf50;
+            }
+          }
+
+          > li.server {
+            > span {
+              color: #4caf50;
+              font-weight: bold;
             }
           }
         }

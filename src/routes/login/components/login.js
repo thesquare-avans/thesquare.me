@@ -89,11 +89,7 @@ class Login extends React.Component {
             </form>
           </div>
           <div className="card-action no-border text-right">
-            <a href="#/" className="color-success" onClick={
-              (e) => {
-                //e.preventDefault();
-              }
-            }>Explore</a>
+            <a href="#/" className="color-success" onClick={this.handleSubmit.bind(this)}>Explore</a>
           </div>
         </div>
       </div>
