@@ -75,6 +75,7 @@
     "prop-types": "^15.5.7",
     "rc-queue-anim": "^1.0.1",
     "react": "^15.5.4",
+    "react-custom-scrollbars": "^4.1.2",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-html5video": "^2.1.0",
@@ -84,8 +85,8 @@
     "react-tap-event-plugin": "^2.0.1",
     "react-websocket": "^1.1.7",
     "redux": "~3.6.0",
-    "socket.io-react": "^1.1.2",
-    "socket.io-client": "latest"
+    "socket.io-client": "latest",
+    "socket.io-react": "^1.1.2"
   },
   "engines": {
     "node": ">=6.9.0",

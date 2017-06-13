@@ -1,10 +1,15 @@
 import * as React from "react";
 import {Divider, RaisedButton, TextField} from "material-ui";
+import { Scrollbars } from 'react-custom-scrollbars';
 import {green500} from "material-ui/styles/colors";
 import io from 'socket.io-client'
+import * as ReactDOM from "react-dom";
 let chatRoom = "0";
 
 let messages = [];
+let lastMessage = {};
+
+let user = null;
 
 const styles = {
   button : {
@@ -18,7 +23,7 @@ const styles = {
 };
 
 let socket = io('ws://localhost:3000');
-
+let room = null;
 const ChatItem = (props) => (
   <li className={props.className}>
     <span className="username">{props.username}</span>: {props.text}
@@ -39,11 +44,19 @@ class ChatBox extends React.Component {
     });
   }
 
+  scrollToBottom(message) {
+    const node = ReactDOM.findDOMNode(message);
+    node.scrollIntoView({ behavior: "smooth" });
+  }
+
   handleSubmit(e) {
     let data = {username: "Thomas", message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
     socket.emit("client:new_msg", data);
-    this.setState((prevState) => { prevState.messages.push(data) });
+    let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
+
+    this.setState((prevState) => { prevState.messages.push(item)});
     this.setState({chat_text: ""})
+    //this.scrollToBottom(item)
   }
 
   handleTextFieldChange(e) {
@@ -61,7 +74,13 @@ class ChatBox extends React.Component {
 
   componentDidMount() {
     socket.on('server:new_msg', data => {
-      this.setState((prevState) => { prevState.messages.push(data) })
+      let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
+      this.setState((prevState) => { prevState.messages.push(item) });
+    });
+
+    socket.on('server:created_room', data => {
+      room = data.uuid;
+      socket.join(room);
     });
   }
 
@@ -72,12 +91,8 @@ class ChatBox extends React.Component {
         <div className="box-body chat">
           <div className="row">
             <div className="col-xl-12">
-              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll"}}>
-                {this.state.messages.map(msg => {
-                  return(
-                    <ChatItem className={msg.person} text={msg.message} username={msg.username} key={msg.uuid}/>
-                  )
-                })}
+              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll", scrollTop: "100%"}}>
+                {this.state.messages.map(msg => { return(msg) })}
               </ul>
               <Divider />
               <div className="bottom">

@@ -6,12 +6,13 @@ import QueueAnim from 'rc-queue-anim';
 import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import ChatBox from 'components/ChatBox/ChatBox'
 import 'react-html5video/dist/styles.css';
+import Streams from "../../../lib/Streams"
 
 let Active = {
   id: 3
 }
 
-let Streams = [
+let StreamsArray = [
   {
     id : 0,
     user: "Thomas",
@@ -59,7 +60,7 @@ const StreamBox = () => (
       </div>
     </div>
     <div className="row">
-      {Streams.map(stream => {
+      {StreamsArray.map(stream => {
         return (
           <div className="col-xl-3 " key={stream.id}>
             <VideoPlayer autoPlay loop muted>
@@ -100,7 +101,7 @@ const Main = () => (
 class Home extends React.Component {
 
   componentWillMount() {
-
+    console.log(Streams.all())
   }
 
   render() {

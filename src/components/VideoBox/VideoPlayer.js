@@ -32,7 +32,7 @@ const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
   <div className="box box-default">
     <div className="box-body video">
 
-      <div className="controls">
+      <div className="controls viewing">
         <div className="top-left">
 
         </div>
