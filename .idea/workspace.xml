@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/Streams.js" afterPath="$PROJECT_DIR$/src/lib/Streams.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" afterPath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/components/home.js" afterPath="$PROJECT_DIR$/src/routes/home/components/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/video.scss" afterPath="$PROJECT_DIR$/src/styles/video.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,18 +33,18 @@
       <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="188">
+              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
-              <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+            <state relative-caret-position="337">
+              <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -56,16 +57,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="63" />
-              <folding />
+              <folding>
+                <marker date="1497424263000" expanded="true" signature="477:2668" ph="{...}" />
+                <marker date="1497424263000" expanded="true" signature="1515:2666" ph="{...}" />
+                <marker date="1497424263000" expanded="true" signature="1536:2655" ph="&lt;div/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="1573:2642" ph="&lt;div/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="2458:2627" ph="&lt;div/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="2693:2904" ph="&lt;div/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="2726:2895" ph="&lt;div/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="2760:2884" ph="&lt;QueueAnim/&gt;" />
+                <marker date="1497424263000" expanded="true" signature="2817:2865" ph="&lt;div/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatBox.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChatBox.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="213">
+              <caret line="82" column="79" lean-forward="false" selection-start-line="82" selection-start-column="79" selection-end-line="82" selection-end-column="79" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -76,8 +87,8 @@
       <file leaf-file-name="TranstportSecurity.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/TranstportSecurity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1282">
-              <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="331">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -130,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/lib/TranstportSecurity.js" />
         <option value="$PROJECT_DIR$/src/components/Header/NavRightList.js" />
         <option value="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" />
-        <option value="$PROJECT_DIR$/src/styles/video.scss" />
-        <option value="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
         <option value="$PROJECT_DIR$/src/lib/Streams.js" />
+        <option value="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
+        <option value="$PROJECT_DIR$/src/styles/video.scss" />
         <option value="$PROJECT_DIR$/src/routes/home/components/home.js" />
       </list>
     </option>
@@ -519,12 +530,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/home/components/home.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ChatBox/ChatBox.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/login/components/login.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/styles/video.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/yarn.lock</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -532,7 +540,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ChatBox/ChatBox.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -795,11 +802,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497352852864</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Work on the api implementation">
+      <created>1497362861376</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1497362861377</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45608000" />
+    <option name="totallyTimeSpent" value="48426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -849,7 +863,8 @@
     <MESSAGE value="Changed some things for building" />
     <MESSAGE value="I think final layout for the chat" />
     <MESSAGE value="Started on the api implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started on the api implementation." />
+    <MESSAGE value="Work on the api implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on the api implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1164,14 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/config/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1190,40 +1197,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="63" />
+          <folding>
+            <marker date="1497424263000" expanded="true" signature="477:2668" ph="{...}" />
+            <marker date="1497424263000" expanded="true" signature="1515:2666" ph="{...}" />
+            <marker date="1497424263000" expanded="true" signature="1536:2655" ph="&lt;div/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="1573:2642" ph="&lt;div/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="2458:2627" ph="&lt;div/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="2693:2904" ph="&lt;div/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="2726:2895" ph="&lt;div/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="2760:2884" ph="&lt;QueueAnim/&gt;" />
+            <marker date="1497424263000" expanded="true" signature="2817:2865" ph="&lt;div/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/TranstportSecurity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1282">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="331">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="337">
+          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="30" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/login/components/login.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+        <state relative-caret-position="213">
+          <caret line="82" column="79" lean-forward="false" selection-start-line="82" selection-start-column="79" selection-end-line="82" selection-end-column="79" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

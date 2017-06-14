@@ -9,8 +9,8 @@ import 'react-html5video/dist/styles.css';
 import Streams from "../../../lib/Streams"
 
 let Active = {
-  id: 3
-}
+
+};
 
 let StreamsArray = [
   {
@@ -58,8 +58,6 @@ const StreamBox = () => (
       <div className="col-xl-5 row-eq-height">
         <ChatBox />
       </div>
-    </div>
-    <div className="row">
       {StreamsArray.map(stream => {
         return (
           <div className="col-xl-3 " key={stream.id}>
@@ -69,31 +67,6 @@ const StreamBox = () => (
           </div>
         )}
       )}
-    </div>
-  </div>
-);
-
-const Main = () => (
-  <div className="row">
-    <div className="col-xl-6">
-      <VideoPlayer autoPlay loop muted>
-        <source src="http://dl1.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm" />
-      </VideoPlayer>
-    </div>
-    <div className="col-xl-6">
-      <VideoPlayer autoPlay loop muted>
-        <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
-      </VideoPlayer>
-    </div>
-    <div className="col-xl-6">
-      <VideoPlayer autoPlay loop muted>
-        <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
-      </VideoPlayer>
-    </div>
-    <div className="col-xl-6">
-      <VideoPlayer autoPlay loop muted>
-        <source src="http://dl1.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm" />
-      </VideoPlayer>
     </div>
   </div>
 );

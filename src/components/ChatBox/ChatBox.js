@@ -80,7 +80,7 @@ class ChatBox extends React.Component {
         <div className="box-body chat">
           <div className="row">
             <div className="col-xl-12">
-              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll", scrollTop: "100%"}}>
+              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll" }}>
                 {this.state.messages.map(msg => { return(msg) })}
               </ul>
               <Divider />
