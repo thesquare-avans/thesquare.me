@@ -25,7 +25,7 @@ class Status {
       let payload = TranstportSecurity.verifyMessage(response.data);
       if(payload) {
         if(payload.success) {
-          return callback(payload)
+          return callback(payload);
         }
       }
     });
@@ -34,6 +34,7 @@ class Status {
       throw error;
     });
 
+    console.log(data);
     return data;
   }
 

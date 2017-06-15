@@ -7,6 +7,7 @@ import VideoPlayer from 'components/VideoBox/VideoPlayer'
 import ChatBox from 'components/ChatBox/ChatBox'
 import 'react-html5video/dist/styles.css';
 import Streams from "../../../lib/Streams"
+import ReactHLS from 'react-hls';
 
 let Active = {
 
@@ -51,9 +52,7 @@ const StreamBox = () => (
   <div>
     <div className="row">
       <div className="col-xl-7 row-eq-height">
-        <VideoPlayer autoPlay loop muted>
-          <source src="http://localhost:8000/assets/trailer.webm" type="video/webm" />
-        </VideoPlayer>
+        <ReactHLS url={"https://video-edge-c67f00.fra02.hls.ttvnw.net/v0/CuwBJiGQZKF12q9PuBOmE3PUmpsL16oJJm9FhyeZGtXYdG_-muC_07SrJka65G343_Qv77DWw1sSFT8Z8py4llgEMgY_zHpn7TYqz0l_KVeQfLsj9ofg4T1sC_G_9E4-a-Yxel6jW6Z6iybNyj7UTwjn5R_QrZvNarIhcqQtVFV-WcKkmg0DhDTetJBOqpGpvo0JjaTLvU1Vm_Z0ua9-PInG2J5o-VXjO8Fqw7lDKVCB9qna8DMMKAL1onSRMqxC3nLL65Qe5ay_v4aiCvHfYSZc0D6GNhy0qRmoU8SedQVvVOOY_3CwQyX_qP7vu_kSEN6T7rsHfIOpABT6KwiWKB4aDBpVyoC_PmLO7pBK8A/index-live.m3u8"} />
       </div>
       <div className="col-xl-5 row-eq-height">
         <ChatBox />

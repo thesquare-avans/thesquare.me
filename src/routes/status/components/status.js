@@ -5,24 +5,45 @@ import Footer from 'components/Footer';
 import QueueAnim from 'rc-queue-anim';
 import Status from '../../../lib/Status';
 
-const Main = (props) => (
-  <div>
-    <div className="row">
-      <div className="col-xl-6">
+let data = {};
+
+const Box = (props) => (
+  <div className="col-xl-4">
+    <div className="box bg-color-success">
+      <div className="box-header box-dark">
+        {props.boxTitle} ()
+      </div>
+      <div className="box-body">
 
       </div>
     </div>
+  </div>
+)
+
+const Main = (props) => (
+  <div>
+
   </div>
 );
 
 class status extends React.Component {
 
+  constructor(props) {
+    super(props);
+    localStorage.setItem("status", "");
+  }
+
+  componentWillMount() {
+    Status.all(function (response) {
+      localStorage.setItem("status", response);
+    });
+
+    this.setState(data);
+    console.log(this.state);
+  }
+
   render() {
     const { children, location } = this.props;
-
-    Status.all(function (data) {
-      console.log(data);
-    });
 
     return (
       <div className="main-app-container">
@@ -36,7 +57,9 @@ class status extends React.Component {
               <div className="full-height">
                 <div className="container-fluid no-breadcrumbs">
                   <QueueAnim type="bottom" className="ui-animate">
-
+                    <div className="row">
+                      <Box boxTitle="API" />
+                    </div>
                   </QueueAnim>
                 </div>
               </div>

@@ -7,10 +7,9 @@ import AvVolumeUp from 'material-ui/svg-icons/av/volume-up';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
-
 import {green500} from 'material-ui/styles/colors'
+import HLS from "hls.js";
 
-import Websocket from 'react-websocket';
 
 let metadata = {
   user : "Thomas",
@@ -26,6 +25,18 @@ const style = {
   }
 }
 
+class HLSSupport {
+
+  static setHLS(videoEl) {
+    if(HLS.isSupported()) {
+      let video = videoEl;
+      let hls = new Hls();
+
+      hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+      hls.attachMedia(video);
+    }
+  }
+}
 
 const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
 
@@ -70,14 +81,13 @@ const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
           </FloatingActionButton>
         </div>
       </div>
-
-      <video {...restProps}>.
-        { children }
+      <video {...restProps}>
+        {children}
       </video>
-
     </div>
   </div>
 );
 
-export default videoConnect(VideoPlayer)
+export default videoConnect(VideoPlayer);
+// module.exports = Player;
 

@@ -18,6 +18,7 @@ const styles = {
 
 class Login extends React.Component {
   handleSubmit(event) {
+    event.preventDefault();
     if (!TransportSecurity.checkIfUserExists()) {
       if (this.state.username !== "") {
         localStorage.setItem("name", this.state.username)
