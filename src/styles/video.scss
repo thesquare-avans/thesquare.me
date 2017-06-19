@@ -81,13 +81,12 @@ $margin : 5px;
           list-style: none;
           padding: 0;
 
-          height: 100%;
+          height: auto;
 
           min-height: 17.5em;
           max-height: 20em;
-          object-fit: cover;
+
           overflow-y: auto;
-          scroll-snap-type: x mandatory;
 
           > li.me {
             > span.username {

@@ -3,6 +3,8 @@ import {Divider, RaisedButton, TextField} from "material-ui";
 import {green500} from "material-ui/styles/colors";
 import io from 'socket.io-client';
 
+let stream = null;
+
 let messages = [];
 
 let user = null;
@@ -59,6 +61,8 @@ class ChatBox extends React.Component {
 
   constructor(props) {
     super(props);
+
+    stream = props.streamId
 
     this.state = {
       chat_text: "",
