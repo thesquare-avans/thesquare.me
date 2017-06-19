@@ -44,7 +44,24 @@ const Box = (props) => (
         {props.boxTitle} ({props.data.count || 0})
       </div>
       <div className="box-body">
-
+        <table className="table">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Response Time</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          {props.data.nodes.map(node => (
+            <tr key={node.id}>
+              <td>{node.id}</td>
+              <td>{node.averageResponseTime} ms</td>
+              <td>{node.status}</td>
+            </tr>
+          ))}
+          </tbody>
+        </table>
       </div>
     </div>
     }
@@ -54,7 +71,24 @@ const Box = (props) => (
         {props.boxTitle} ({props.data.count || 0})
       </div>
       <div className="box-body">
-
+        <table className="table">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Response Time</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          {props.data.nodes.map(node => (
+            <tr key={node.id}>
+              <td>{node.id}</td>
+              <td>{node.averageResponseTime} ms</td>
+              <td>{node.status}</td>
+            </tr>
+          ))}
+          </tbody>
+        </table>
       </div>
     </div>
     }

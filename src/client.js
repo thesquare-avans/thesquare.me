@@ -29,6 +29,7 @@ const rootRoute = {
       require('./routes/login'),
       require('./routes/home'),
       require('./routes/status'),
+      require('./routes/settings'),
       {
         path: '*',
         indexRoute: { onEnter: (nextState, replace) => replace('/404') },
