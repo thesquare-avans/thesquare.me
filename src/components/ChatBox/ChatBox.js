@@ -1,12 +1,9 @@
 import * as React from "react";
 import {Divider, RaisedButton, TextField} from "material-ui";
 import {green500} from "material-ui/styles/colors";
-import io from 'socket.io-client'
-
-let chatRoom = "0";
+import io from 'socket.io-client';
 
 let messages = [];
-let lastMessage = {};
 
 let user = null;
 
@@ -71,6 +68,8 @@ class ChatBox extends React.Component {
       let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
     });
+
+    socket.on('')
   }
 
   render() {

@@ -8,7 +8,6 @@ import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import {green500} from 'material-ui/styles/colors'
-import HLS from "hls.js";
 
 
 let metadata = {
@@ -23,20 +22,7 @@ const style = {
   chip: {
     margin : 4,
   }
-}
-
-class HLSSupport {
-
-  static setHLS(videoEl) {
-    if(HLS.isSupported()) {
-      let video = videoEl;
-      let hls = new Hls();
-
-      hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
-      hls.attachMedia(video);
-    }
-  }
-}
+};
 
 const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
 
