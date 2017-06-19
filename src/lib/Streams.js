@@ -12,7 +12,6 @@ class Streams {
 
   static all(callback) {
 
-
     let config = {
         headers: {
           'X-PublicKey': btoa(localStorage.getItem("publicKey")),

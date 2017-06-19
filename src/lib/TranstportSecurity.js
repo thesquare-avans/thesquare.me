@@ -36,12 +36,12 @@ class TranstportSecurity {
 
     let data = {};
 
-    data.payload = message;
+    data.payload = JSON.stringify(message);
     data.publicKey = btoa(localStorage.getItem("publicKey"));
 
     let signature = new KJUR.crypto.Signature({"alg": "SHA256withRSA"});
     signature.init(localStorage.getItem("privateKey"));
-    data.signature = signature.signString(JSON.stringify(message));
+    data.signature = signature.signString(data.payload);
 
     return data;
   }
@@ -60,7 +60,7 @@ class TranstportSecurity {
         },
       };
 
-      let request = axios.post(BASE_API_URL + "/register", JSON.stringify(signedMessage), config);
+      let request = axios.post(`${BASE_API_URL}/register`, JSON.stringify(signedMessage), config);
 
       request.then(function (response) {
         let payload = TranstportSecurity.verifyMessage(response.data);

@@ -6,10 +6,6 @@ let data = {};
 
 class Status {
 
-  constructor() {
-
-  }
-
   static all(callback) {
 
     let config = {
@@ -34,7 +30,6 @@ class Status {
       throw error;
     });
 
-    console.log(data);
     return data;
   }
 
