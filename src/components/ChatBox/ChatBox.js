@@ -41,12 +41,15 @@ class ChatBox extends React.Component {
   }
 
   handleSubmit(e) {
-    let data = {username: JSON.parse(localStorage.getItem("user")).name, message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
-    socket.emit("client:new_msg", data);
-    let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
+    e.preventDefault();
+    if(this.state.chat_text.length !== 0){
+      let data = {username: JSON.parse(localStorage.getItem("user")).name, message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
+      socket.emit("client:new_msg", data);
+      let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
 
-    this.setState((prevState) => { prevState.messages.push(item)});
-    this.setState({chat_text: ""})
+      this.setState((prevState) => { prevState.messages.push(item)});
+      this.setState({chat_text: ""})
+    }
     //this.scrollToBottom(item)
   }
 
@@ -68,8 +71,6 @@ class ChatBox extends React.Component {
       let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
     });
-
-    socket.on('')
   }
 
   render() {

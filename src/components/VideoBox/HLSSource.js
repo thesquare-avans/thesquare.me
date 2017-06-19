@@ -70,7 +70,6 @@ class ReactHls extends React.Component {
 
     hls.loadSource(url);
     hls.attachMedia($video);
-    this.$video = $video;
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
       if (autoplay) {
         $video.play();
@@ -99,7 +98,7 @@ class ReactHls extends React.Component {
             <div className="top-right">
               {/*{!this.refs.video.paused && <a href="#" onClick={(e) => {*/}
                 {/*e.preventDefault();*/}
-                {/*//this.refs.videoEl.pause();*/}
+                {/*this.refs.videoEl.pause();*/}
               {/*}}>*/}
                 {/*Pause video*/}
               {/*</a>}*/}
