@@ -93,7 +93,7 @@ class ChatBox extends React.Component {
                     onChange={this.handleTextFieldChange.bind(this)}
                     floatingLabelFocusStyle={styles.button.floatingLabelFocusStyle}
                     underlineFocusStyle={styles.button.underlineStyle} />
-                  <RaisedButton label="Send" style={{width: "10%", marginLeft: "20px"}} onTouchTap={this.handleSubmit.bind(this)}/>
+                  <RaisedButton label="Send" disabled={this.state.chat_text.length === 0} style={{width: "10%", marginLeft: "20px"}} onTouchTap={this.handleSubmit.bind(this)}/>
                 </form>
               </div>
             </div>

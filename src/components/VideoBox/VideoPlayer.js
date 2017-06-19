@@ -9,11 +9,10 @@ import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import {green500} from 'material-ui/styles/colors'
 
-
 let metadata = {
   user : "Thomas",
   viewers : 100,
-}
+};
 
 const style = {
   floatButtonMute : {

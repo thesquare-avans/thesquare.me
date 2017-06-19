@@ -18,8 +18,45 @@ const styles = {
 
 class Login extends React.Component {
 
-  handleSubmit(event) {
+  loadConfig(event) {
     event.preventDefault();
+    document.getElementById('configSelector').click();
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+      let file = event.target.files[0];
+
+      if(file) {
+        let reader = new FileReader();
+
+        reader.onload = (function (loadEvent) {
+          try {
+            let contents = JSON.parse(loadEvent.target.result);
+          } catch (e) {
+            if(e) {
+              return alert("Invalid config file");
+            }
+          }
+
+          localStorage.setItem("user", contents.user);
+          localStorage.setItem("publicKey", contents.publicKey);
+          localStorage.setItem("privateKey", contents.privateKey);
+
+          TransportSecurity.checkIfUserExists(function (err) {
+            if (err) {
+              console.log("There was a error");
+            } else {
+              hashHistory.push('/home')
+            }
+          });
+        });
+
+        reader.readAsText(file);
+      }
+    } else {
+      alert('The File APIs are not fully supported in this browser.');
+    }
+  }
+
+  handleSubmit(event) {
     if (!TransportSecurity.checkIfUserExists()) {
       if (this.state.username !== "") {
         localStorage.setItem("name", this.state.username)
@@ -92,6 +129,9 @@ class Login extends React.Component {
           </div>
           <div className="card-action no-border text-right">
             <a href="#/" className="color-success" onClick={this.handleSubmit.bind(this)}>Explore</a>
+            {/*<input className="color-success" type="file" onClick={this.loadConfig.bind(this)} name="config" id="configSelector">Load Config</input>*/}
+            <input id="configSelector" type="file" name="config" style={{display: "none"}} />
+            <a href="#/" className="color-success" onClick={this.loadConfig.bind(this)}>Load Config</a>
           </div>
         </div>
       </div>

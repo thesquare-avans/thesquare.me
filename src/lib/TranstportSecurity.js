@@ -121,7 +121,7 @@ class TranstportSecurity {
         }
         callback(new Error("Unexpected error"));
       } else {
-        //callback(new Error("The received message was not valid"));
+        callback(new Error("The received message was not valid"));
       }
     });
 
@@ -146,7 +146,7 @@ class TranstportSecurity {
     });
   }
 
-  static generateKeys(name ,callback) {
+  static generateKeys(callback) {
     forge.pki.rsa.generateKeyPair({bits: 2048, workers: -1}, function (err, keypair) {
       localStorage.setItem("publicKey", forge.pki.publicKeyToPem(keypair.publicKey));
       localStorage.setItem("privateKey", forge.pki.privateKeyToPem(keypair.privateKey));

@@ -93,7 +93,10 @@ class ReactHls extends React.Component {
 
           <div className="controls viewing">
             <div className="top-left">
-
+              <Chip style={style.chip}>
+                <Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />
+                { metadata.viewers }
+              </Chip>
             </div>
             <div className="top-right">
               {/*{!this.refs.video.paused && <a href="#" onClick={(e) => {*/}
