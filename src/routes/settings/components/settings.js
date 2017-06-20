@@ -36,12 +36,15 @@ class settings extends React.Component {
 
     element.style.display = "none";
     document.body.appendChild(element);
-    console.log(element);
     element.click();
     document.body.removeChild(element);
   }
 
   componentWillMount() {
+
+  }
+
+  componentDidMount() {
 
   }
 

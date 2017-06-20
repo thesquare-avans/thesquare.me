@@ -5,6 +5,7 @@ import Footer from 'components/Footer';
 import QueueAnim from 'rc-queue-anim';
 import axios from 'axios';
 import TranstportSecurity from "../../../lib/TranstportSecurity";
+import Status from "../../../lib/Status";
 
 let data = {};
 const BASE_URL = "http://api.thesquare.me/v1";
@@ -111,23 +112,11 @@ class status extends React.Component {
   }
 
   loadData(res) {
-    let payload = TranstportSecurity.verifyMessage(res.data);
-    if(payload) {
-      if(payload.success) {
-        this.setState(payload);
-      }
-    }
+    this.setState(res);
   }
 
   componentDidMount() {
-    let config = {
-      headers: {
-        'X-PublicKey': btoa(localStorage.getItem("publicKey")),
-        'Content-Type': "application/json; charset=utf-8"
-      },
-    };
-
-    axios.get(`${BASE_URL}/status`, config).then(res => this.loadData(res));
+    Status.all(res => this.loadData(res));
   }
 
   componentWillMount() {

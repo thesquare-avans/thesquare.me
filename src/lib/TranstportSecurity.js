@@ -30,6 +30,25 @@ class TranstportSecurity {
     return JSON.parse(message.payload)
   }
 
+  static verifyMessageExternal(message, key) {
+    try {
+      JSON.parse(message.payload);
+    } catch (e) {
+      console.log("Message payload not valid", message, e);
+      return false;
+    }
+
+    let signature = new KJUR.crypto.Signature({"alg": "SHA256withRSA"});
+    signature.init(atob(key));
+    signature.updateString(message.payload);
+
+    if(!signature.verify(message.signature)) {
+      return false;
+    }
+
+    return JSON.parse(message.payload);
+  }
+
   static signMessage(message) {
     if (!localStorage.getItem("privateKey")) return false;
     if (!localStorage.getItem("publicKey")) return false;

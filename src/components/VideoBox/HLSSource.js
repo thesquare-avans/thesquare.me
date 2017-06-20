@@ -68,6 +68,7 @@ class ReactHls extends React.Component {
     let { video : $video } = this.refs;
     let hls = new Hls(hlsConfig);
 
+    hls.detachMedia();
     hls.loadSource(url);
     hls.attachMedia($video);
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
@@ -77,6 +78,26 @@ class ReactHls extends React.Component {
 
       if(this.video.muted) {
         $video.muted = this.video.muted;
+      }
+    });
+
+    hls.on(Hls.Events.ERROR, function (event, data) {
+      if (data.fatal) {
+        switch (data.type) {
+          case Hls.ErrorTypes.NETWORK_ERROR:
+            // when try to recover network error
+            console.log("fatal network error encountered, try to recover");
+            hls.startLoad();
+            break;
+          case Hls.ErrorTypes.MEDIA_ERROR:
+            console.log("fatal media error encountered, try to recover");
+            hls.recoverMediaError();
+            break;
+          default:
+            // when cannot recover
+            hls.destroy();
+            break;
+        }
       }
     });
 
@@ -99,40 +120,30 @@ class ReactHls extends React.Component {
               </Chip>
             </div>
             <div className="top-right">
-              {/*{!this.refs.video.paused && <a href="#" onClick={(e) => {*/}
-                {/*e.preventDefault();*/}
-                {/*this.refs.videoEl.pause();*/}
-              {/*}}>*/}
-                {/*Pause video*/}
-              {/*</a>}*/}
-              {/*{this.refs.video.paused && <a href="#" onClick={(e) => {*/}
-                {/*e.preventDefault();*/}
-                {/*//this.refs.videoEl.play();*/}
-              {/*}}>*/}
-                {/*Play video*/}
-              {/*</a>}*/}
+              <p>{metadata.user}</p>
             </div>
             <div className="bottom-left">
-              {/*<Chip style={style.chip}>*/}
-                {/*<Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />*/}
-                {/*{ metadata.viewers }*/}
-              {/*</Chip>*/}
+
             </div>
             <div className="bottom-right">
-              <FloatingActionButton
-                mini={true}
-                backgroundColor={style.floatButtonMute.backgroundColor}
-                onTouchTap={function (e) {
-                  e.preventDefault();
-                  // videoEl.muted = !video.muted;
-                }}
-              >
-                {this.video.muted && <AvVolumeOff />}
-                {!this.video.muted && <AvVolumeUp />}
-              </FloatingActionButton>
+              {/*<FloatingActionButton*/}
+                {/*mini={true}*/}
+                {/*backgroundColor={style.floatButtonMute.backgroundColor}*/}
+                {/*onTouchTap={function (e) {*/}
+                  {/*e.preventDefault();*/}
+                  {/*this.refs*/}
+                {/*}}*/}
+              {/*>*/}
+                {/*{this.video.muted && <AvVolumeOff />}*/}
+                {/*{!this.video.muted && <AvVolumeUp />}*/}
+              {/*</FloatingActionButton>*/}
             </div>
           </div>
-          <video ref="video" id={`react-hls-${playerId}`} controls={controls} width={width} height={height}>
+          <video ref="video"
+                 id={`react-hls-${playerId}`}
+                 controls={controls}
+                 width={width}
+                 height={height} poster="/assets/offline.png">
             {/*{children}*/}
           </video>
         </div>

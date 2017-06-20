@@ -2,13 +2,19 @@ import * as React from "react";
 import {Divider, RaisedButton, TextField} from "material-ui";
 import {green500} from "material-ui/styles/colors";
 import io from 'socket.io-client';
+import Streams from "../../lib/Streams";
+import TransportSecurity from "../../lib/TranstportSecurity";
+import axios from 'axios';
+import Chat from "../../lib/Chat";
+
+const BASE_URL = "http://api.thesquare.me/v1";
 
 let stream = null;
 
 let messages = [];
 
 let user = null;
-
+let cachedUsers = [];
 const styles = {
   button : {
     floatingLabelFocusStyle: {
@@ -20,8 +26,6 @@ const styles = {
   }
 };
 
-let socket = io('ws://localhost:3000');
-
 const ChatItem = (props) => (
   <li className={props.className}>
     <span className="username">{props.username}</span>: {props.text}
@@ -30,39 +34,12 @@ const ChatItem = (props) => (
 
 class ChatBox extends React.Component {
 
-  generateUUID () { // Public Domain/MIT
-    let d = new Date().getTime();
-    if (typeof performance !== 'undefined' && typeof performance.now === 'function'){
-      d += performance.now(); //use high-precision timer if available
-    }
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-      let r = (d + Math.random() * 16) % 16 | 0;
-      d = Math.floor(d / 16);
-      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-    });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    if(this.state.chat_text.length !== 0){
-      let data = {username: JSON.parse(localStorage.getItem("user")).name, message: this.state.chat_text, person: "me", uuid: this.generateUUID()};
-      socket.emit("client:new_msg", data);
-      let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
-
-      this.setState((prevState) => { prevState.messages.push(item)});
-      this.setState({chat_text: ""})
-    }
-    //this.scrollToBottom(item)
-  }
-
-  handleTextFieldChange(e) {
-    this.setState({chat_text: e.target.value})
-  }
-
   constructor(props) {
     super(props);
+    this.server = io(props.streamServer);
 
     stream = props.streamId
+    //this.connect();
 
     this.state = {
       chat_text: "",
@@ -70,10 +47,107 @@ class ChatBox extends React.Component {
     }
   }
 
-  componentDidMount() {
-    socket.on('server:new_msg', data => {
-      let item = (<ChatItem className={data.person} text={data.message} username={data.username} key={data.uuid}/>);
+  identify(callback) {
+    let message = TransportSecurity.signMessage({
+      publicKey: btoa(localStorage.getItem("publicKey"))
+    });
+
+    this.server.emit('identify', message, data => {
+      let payload = TransportSecurity.verifyMessage(data);
+
+      if(payload && payload.success) {
+        return callback();
+      } else {
+        return callback(new Error())
+      }
+    });
+  }
+
+  join(callback) {
+    let message = TransportSecurity.signMessage({
+      room: stream
+    });
+
+    this.server.emit('join', message, data => {
+      let payload = TransportSecurity.verifyMessage(data);
+
+      if(payload && payload.success) {
+        return callback(payload)
+      }
+    });
+  }
+
+  sendOwnMessage(msg) {
+    let item = (<ChatItem className="me" text={msg} username="You" key={messages.length + 1}/>);
+
+    this.setState((prevState) => { prevState.messages.push(item)});
+    this.setState({chat_text: ""})
+  }
+
+  sendMessage(msg) {
+    let message = TransportSecurity.signMessage({
+      room: stream,
+      message: msg
+    });
+
+    this.server.emit('message', message);
+    this.sendOwnMessage(msg);
+  }
+
+  reciveMessage(data, user) {
+    let pl = TransportSecurity.verifyMessage(user);
+    if(pl && pl.success) {
+      let message = TransportSecurity.verifyMessageExternal(data.data.data, pl.user.publicKey);
+      let item = (<ChatItem className="them" text={message.message} username={pl.user.name} key={messages.length + 1}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
+    }
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if(this.state.chat_text.length !== 0){
+      this.sendMessage(this.state.chat_text);
+    }
+  }
+
+  handleTextFieldChange(e) {
+    this.setState({chat_text: e.target.value})
+  }
+
+  componentDidMount() {
+    this.identify(function (err) {
+      if(err) {
+        console.log(err);
+      }
+    });
+
+    this.join(function (payload) {
+      //console.log(payload);
+    });
+
+    this.server.on('message', data => {
+      let payload = TransportSecurity.verifyMessage(data);
+      if(payload && payload.success) {
+        if(cachedUsers[payload.data.sender]) {
+          this.reciveMessage(payload, cachedUsers[payload.data.sender])
+        }
+
+        let config = {
+          headers: {
+            'X-PublicKey': btoa(localStorage.getItem("publicKey")),
+            'Content-Type': "application/json; charset=utf-8"
+          },
+        };
+
+        let request = axios.get(`${BASE_URL}/users/${payload.data.sender}`, config);
+
+        request.then(res => this.reciveMessage(payload, res.data));
+
+        request.catch(function(error) {
+          throw error;
+        });
+      }
+
     });
   }
 

@@ -37,8 +37,31 @@ class Streams {
       return data;
   }
 
-  static get() {
+  static get(uuid, callback) {
 
+    let config = {
+      headers: {
+        'X-PublicKey': btoa(localStorage.getItem("publicKey")),
+        'Content-Type': "application/json; charset=utf-8"
+      },
+    };
+
+    let request = axios.get(`${BASE_URL}/streams/${uuid}`, config);
+
+    request.then(function(response) {
+      let payload = TranstportSecurity.verifyMessage(response.data);
+      if(payload) {
+        if(payload.success) {
+          return callback(payload)
+        }
+      }
+    });
+
+    request.catch(function(error) {
+      throw error;
+    });
+
+    return data;
   }
 }
 

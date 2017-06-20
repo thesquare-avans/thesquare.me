@@ -25,6 +25,10 @@ $margin : 5px;
       border-radius: 0.2rem;
     }
 
+    > video[poster] {
+      object-fit: inherit !important;
+    }
+
     > .controls {
       display:  -webkit-box;
       display: -webkit-flex;
