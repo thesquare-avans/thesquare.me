@@ -7,4 +7,5 @@ cache:
     - "node_modules"
 
 install:
+- "npm install"
 - "npm run clean && npm run copy && webpack --progress --bail --env dist -p"
