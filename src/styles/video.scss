@@ -90,19 +90,23 @@ $margin : 5px;
           min-height: 17.5em;
           max-height: 20em;
 
-          overflow-y: auto;
+          //overflow-y: auto;
 
           > li.me {
             > span.username {
               color: #4caf50;
               font-weight: bold;
             }
+
+            word-break: break-all;
           }
 
           > li.them {
             > span {
               color: #4caf50;
             }
+
+            word-break: break-all;
           }
 
           > li.server {
@@ -110,6 +114,8 @@ $margin : 5px;
               color: #4caf50;
               font-weight: bold;
             }
+
+            word-break: break-all;
           }
         }
       }

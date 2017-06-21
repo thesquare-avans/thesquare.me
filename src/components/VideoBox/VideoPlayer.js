@@ -65,7 +65,7 @@ const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
           </FloatingActionButton>
         </div>
       </div>
-      <video {...restProps}>
+      <video {...restProps} poster="/assets/offline.png">
         {children}
       </video>
     </div>

@@ -43,6 +43,7 @@ class ChatBox extends React.Component {
 
     this.state = {
       chat_text: "",
+      count: 0,
       messages: messages
     }
   }
@@ -100,6 +101,9 @@ class ChatBox extends React.Component {
       let message = TransportSecurity.verifyMessageExternal(data.data.data, pl.user.publicKey);
       let item = (<ChatItem className="them" text={message.message} username={pl.user.name} key={messages.length + 1}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
+      // if(this.state.messages.length >= 20 ) {
+      //   this.state.messages.shift();
+      // }
     }
   }
 
@@ -111,7 +115,11 @@ class ChatBox extends React.Component {
   }
 
   handleTextFieldChange(e) {
-    this.setState({chat_text: e.target.value})
+    if(e.target.value.length <= 150) {
+      this.setState({chat_text: e.target.value})
+    }
+
+    this.setState({count: e.target.value.length});
   }
 
   componentDidMount() {
@@ -172,6 +180,7 @@ class ChatBox extends React.Component {
                     floatingLabelFocusStyle={styles.button.floatingLabelFocusStyle}
                     underlineFocusStyle={styles.button.underlineStyle} />
                   <RaisedButton label="Send" disabled={this.state.chat_text.length === 0} style={{width: "10%", marginLeft: "20px"}} onTouchTap={this.handleSubmit.bind(this)}/>
+                  <p>{this.state.count}</p>
                 </form>
               </div>
             </div>

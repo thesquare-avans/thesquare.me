@@ -27,7 +27,7 @@ let StreamsArray = [
     id : 1,
     user: "Thomas",
     source : {
-      url: "http://localhost:8000/assets/trailer.webm",
+      url: "/assets/trailer.webm",
       type: "video/webm"
     }
   },

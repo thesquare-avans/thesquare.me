@@ -1,7 +1,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Hls from 'hls.js';
+
+import axios from 'axios';
+
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import AvVolumeOff from 'material-ui/svg-icons/av/volume-off';
 import AvVolumeUp from 'material-ui/svg-icons/av/volume-up';
@@ -10,7 +12,7 @@ import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import {green500} from 'material-ui/styles/colors'
 
-let fragment = 0;
+let fragment = 1;
 
 let metadata = {
   user : "Thomas",
@@ -58,15 +60,21 @@ class Player extends React.Component {
   _initPlayer () {
     let {video: $video} = this.refs;
 
-    $video.src = "http://localhost:8000/assets/trailer.webm";
+    axios.get("http://145.49.13.101:8080/stream/mediaSequence?stream=0").then(res => {
+      console.log(res);
+      fragment = res.data.mediaSequence
+    });
+    console.log(fragment);
+
+    $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + fragment;
     $video.poster = "/assets/offline.png";
     $video.autoplay = true;
-    console.log(fragment);
+
     $video.addEventListener('ended', data => {
       fragment++;
       $video.poster = null;
       console.log(fragment);
-      $video.src = "http://145.49.13.101:8080/fragment=" + fragment;
+      $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + fragment;
     });
   }
 
