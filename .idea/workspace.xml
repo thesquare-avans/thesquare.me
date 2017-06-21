@@ -1,14 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="Added chat implementation.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/offline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/VideoBox/Player.js" />
+    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="Added new kind of player. And travis support I hope">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/400_400-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/adellecharles-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/adhamdannaway-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/allisongrayce-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/angelceballos-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/chexee-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/jsa-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/kerem-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/kolage-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/ok-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/raquelromanp-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/uxceo-128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1438893761775-f1db119d27b2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1450101499163-c8848c66ca85.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1455813870877-04a32045af63.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1456374407032-6e4baf58fb62.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1458324124043-7803d4fec380.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-imNop2O1Rit190cSkxXv_1-7069.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/diamond.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/imac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/package.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/target.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-silver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/style_typography_roboto1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/background/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/background/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/logo_x_pattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/g1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/b2afaf2b30718b2e6a2501a74ee91d02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/0.844b0ed7f182ada829e6.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/0.844b0ed7f182ada829e6.chunk.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/1.844b0ed7f182ada829e6.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/1.844b0ed7f182ada829e6.chunk.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/2.844b0ed7f182ada829e6.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/2.844b0ed7f182ada829e6.chunk.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/3.844b0ed7f182ada829e6.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/3.844b0ed7f182ada829e6.chunk.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/app.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/audio.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/loader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.ijmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/codepoints" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/material-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/webfontloader/webfontloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/VideoBox/HLSSource.js" afterPath="$PROJECT_DIR$/src/components/VideoBox/HLSSource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" afterPath="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/components/home.js" afterPath="$PROJECT_DIR$/src/routes/home/components/home.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="53" />
+              <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -39,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/VideoBox/Player.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+              <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -48,18 +127,28 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="86" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="86" />
+            <state relative-caret-position="195">
+              <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -167,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/routes/home/components/home.js" />
         <option value="$PROJECT_DIR$/src/components/VideoBox/Player.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -247,15 +337,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ChatBox/ChatBox.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/VideoBox/HLSSource.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/lib/TranstportSecurity.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/home/components/home.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/routes/login/components/login.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/styles/video.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/yarn.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.travis.yml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -483,7 +565,7 @@
       <workItem from="1497122817335" duration="190000" />
       <workItem from="1497123249061" duration="2653000" />
       <workItem from="1497859248858" duration="3630000" />
-      <workItem from="1497866241236" duration="41349000" />
+      <workItem from="1497866241236" duration="42740000" />
     </task>
     <task id="LOCAL-00001" summary="Started on the register/login page.">
       <created>1497028975625</created>
@@ -590,17 +672,23 @@
       <option name="project" value="LOCAL" />
       <updated>1497959406211</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added new kind of player. And travis support I hope">
+      <created>1498036202556</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1498036202559</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107085000" />
+    <option name="totallyTimeSpent" value="108476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30877572" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
@@ -608,7 +696,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3079179" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49853373" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -642,7 +730,8 @@
     <MESSAGE value="Starting on the chat implementation." />
     <MESSAGE value="Changed/Add some things" />
     <MESSAGE value="Added chat implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chat implementation." />
+    <MESSAGE value="Added new kind of player. And travis support I hope" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new kind of player. And travis support I hope" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -659,13 +748,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-mute.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-off.js" />
     <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/index.js" />
@@ -847,7 +929,7 @@
         <state relative-caret-position="224">
           <caret line="48" column="13" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="48" selection-end-column="13" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -867,7 +949,7 @@
         <state relative-caret-position="1331">
           <caret line="117" column="23" lean-forward="true" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,7 +959,7 @@
         <state relative-caret-position="211">
           <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
             <element signature="n#!!block;n#verifyMessage#0;n#TranstportSecurity#0" expanded="false" />
           </folding>
         </state>
@@ -896,7 +978,7 @@
         <state relative-caret-position="-4">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,7 +1024,7 @@
     <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="53" />
+          <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -952,23 +1034,31 @@
     <entry file="file://$PROJECT_DIR$/src/components/VideoBox/Player.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="86" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="86" />
+        <state relative-caret-position="195">
+          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
