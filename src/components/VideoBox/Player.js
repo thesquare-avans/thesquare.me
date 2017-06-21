@@ -15,7 +15,7 @@ import {green500} from 'material-ui/styles/colors'
 //let fragment = 1;
 
 let metadata = {
-  user : "Thomas",
+  user : "Stream",
   viewers : 100,
 };
 
@@ -62,7 +62,7 @@ class Player extends React.Component {
 
   _initPlayer () {
     if(!this.loaded) {
-      axios.get("http://145.49.13.101:8080/stream/mediaSequence?stream=0")
+      axios.get("http://145.49.13.101:8080/stream/mediaSequence?stream=" + this.props.streamId)
         .then(res => {
           this.fragment = res.data.mediaSequence;
           console.log(this.fragment);
@@ -75,13 +75,16 @@ class Player extends React.Component {
 
     let {video: $video} = this.refs;
 
-    $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
+    $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=" + this.props.streamId +"&mediaSequence=" + this.fragment;
+    // $video.src = "/assets/download.mp4";
     $video.poster = "/assets/offline.png";
     $video.autoplay = true;
 
     $video.addEventListener('error', error => {
-      // $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
-      $video.poster = "/assets/offline.png";
+      if(this.loaded) {
+        $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=" + this.props.streamId +"&mediaSequence=" + this.fragment;
+        $video.poster = "/assets/offline.png";
+      }
       // this.fragment++;
     });
 
@@ -89,7 +92,7 @@ class Player extends React.Component {
       // console.log(data);
       this.fragment++;
       $video.poster = null;
-      $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
+      $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=" + this.props.streamId +"&mediaSequence=" + this.fragment;
 
     });
   }
@@ -132,7 +135,7 @@ class Player extends React.Component {
                  id={`react-hls-${playerId}`}
                  controls={controls}
                  width={width}
-                 height={height}>
+                 height={height} type="video/mp4">
             {/*{children}*/}
           </video>
         </div>
@@ -154,6 +157,7 @@ class Player extends React.Component {
 
 Player.propTypes = {
   streamId : PropTypes.string.isRequired,
+  stream : PropTypes.string.isRequired,
 };
 
 module.exports = Player;

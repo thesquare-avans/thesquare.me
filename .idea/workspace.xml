@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="">
+    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="Added some">
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/0.d066bdcfd816f2fb3f3e.chunk.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/0.d066bdcfd816f2fb3f3e.chunk.js.map" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/1.d066bdcfd816f2fb3f3e.chunk.js" afterPath="" />
@@ -87,6 +87,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/material-icons.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/vendors/webfontloader/webfontloader.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" afterPath="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/VideoBox/Player.js" afterPath="$PROJECT_DIR$/src/components/VideoBox/Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/components/home.js" afterPath="$PROJECT_DIR$/src/routes/home/components/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/video.scss" afterPath="$PROJECT_DIR$/src/styles/video.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,11 +105,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state relative-caret-position="85">
+              <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -113,11 +117,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="offline.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/offline.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/error.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoBox/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="167">
+              <caret line="94" column="96" lean-forward="false" selection-start-line="94" selection-start-column="96" selection-end-line="94" selection-end-column="96" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -125,14 +146,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranstportSecurity.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TranstportSecurity.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/TranstportSecurity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#verifyMessage#0;n#TranstportSecurity#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,23 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatBox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="168" column="77" lean-forward="false" selection-start-line="168" selection-start-column="71" selection-end-line="168" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="117" column="34" lean-forward="false" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
+            <state relative-caret-position="219">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -255,12 +262,12 @@
         <option value="$PROJECT_DIR$/src/components/VideoBox/HLSSource.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/routes/home/components/home.js" />
         <option value="$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js" />
-        <option value="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
-        <option value="$PROJECT_DIR$/src/styles/video.scss" />
         <option value="$PROJECT_DIR$/src/components/Header/NavLeftList.js" />
+        <option value="$PROJECT_DIR$/src/styles/video.scss" />
+        <option value="$PROJECT_DIR$/src/components/ChatBox/ChatBox.js" />
         <option value="$PROJECT_DIR$/src/components/VideoBox/Player.js" />
+        <option value="$PROJECT_DIR$/src/routes/home/components/home.js" />
       </list>
     </option>
   </component>
@@ -475,6 +482,7 @@
       <recent name="D:\Sites\thesquare.me\src\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/dist/assets" />
       <recent name="$PROJECT_DIR$/src/components/VideoBox" />
@@ -723,7 +731,7 @@
       <workItem from="1497122817335" duration="190000" />
       <workItem from="1497123249061" duration="2653000" />
       <workItem from="1497859248858" duration="3630000" />
-      <workItem from="1497866241236" duration="50738000" />
+      <workItem from="1497866241236" duration="55800000" />
     </task>
     <task id="LOCAL-00001" summary="Started on the register/login page.">
       <created>1497028975625</created>
@@ -865,16 +873,30 @@
       <option name="project" value="LOCAL" />
       <updated>1498046131864</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Remove dist for new version on the site">
+      <created>1498046243264</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1498046243264</updated>
+    </task>
+    <task id="LOCAL-00022" summary="New dist">
+      <created>1498046516362</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1498046516362</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116474000" />
+    <option name="totallyTimeSpent" value="121536000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30877572" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
@@ -882,7 +904,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49853373" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49853373" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -921,7 +943,9 @@
     <MESSAGE value="added files to assets" />
     <MESSAGE value="Fixed some bugs + new dist version" />
     <MESSAGE value="New Dist" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Dist" />
+    <MESSAGE value="Remove dist for new version on the site" />
+    <MESSAGE value="New dist" />
+    <option name="LAST_COMMIT_MESSAGE" value="New dist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,8 +954,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-mute.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-ui/svg-icons/av/volume-off.js" />
     <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/index.js" />
     <entry file="file://$PROJECT_DIR$/src/routes/app/routes/ui/routes/typography/components/Typography.js" />
     <entry file="file://$PROJECT_DIR$/src/constants/Config.js">
@@ -1155,16 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoBox/VideoPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -1175,20 +1187,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Header/NavLeftList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="168" column="77" lean-forward="false" selection-start-line="168" selection-start-column="71" selection-end-line="168" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
+    <entry file="file://$PROJECT_DIR$/src/lib/Streams.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="117" column="34" lean-forward="false" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
+        <state relative-caret-position="-408">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1197,6 +1207,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ChatBox/ChatBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1399">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1211,38 +1229,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/Streams.js">
+    <entry file="file://$PROJECT_DIR$/src/lib/TranstportSecurity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
+        <state relative-caret-position="23">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/NavLeftList.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/error.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/offline.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/video.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoBox/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        <state relative-caret-position="167">
+          <caret line="94" column="96" lean-forward="false" selection-start-line="94" selection-start-column="96" selection-end-line="94" selection-end-column="96" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/TranstportSecurity.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/home/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
           <folding>
-            <element signature="n#!!block;n#verifyMessage#0;n#TranstportSecurity#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

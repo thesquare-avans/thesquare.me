@@ -2,10 +2,8 @@ import * as React from "react";
 import {Divider, RaisedButton, TextField} from "material-ui";
 import {green500} from "material-ui/styles/colors";
 import io from 'socket.io-client';
-import Streams from "../../lib/Streams";
 import TransportSecurity from "../../lib/TranstportSecurity";
 import axios from 'axios';
-import Chat from "../../lib/Chat";
 
 const BASE_URL = "http://api.thesquare.me/v1";
 
@@ -111,6 +109,7 @@ class ChatBox extends React.Component {
     e.preventDefault();
     if(this.state.chat_text.length !== 0){
       this.sendMessage(this.state.chat_text);
+      this.setState({count: 0})
     }
   }
 
@@ -180,7 +179,7 @@ class ChatBox extends React.Component {
                     floatingLabelFocusStyle={styles.button.floatingLabelFocusStyle}
                     underlineFocusStyle={styles.button.underlineStyle} />
                   <RaisedButton label="Send" disabled={this.state.chat_text.length === 0} style={{width: "10%", marginLeft: "20px"}} onTouchTap={this.handleSubmit.bind(this)}/>
-                  <p>{this.state.count}</p>
+                  <p>{this.state.count} characters left</p>
                 </form>
               </div>
             </div>
