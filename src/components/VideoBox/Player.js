@@ -12,7 +12,7 @@ import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import {green500} from 'material-ui/styles/colors'
 
-let fragment = 1;
+//let fragment = 1;
 
 let metadata = {
   user : "Thomas",
@@ -33,12 +33,15 @@ class Player extends React.Component {
     super(props);
 
     this.state = {
-      playerId : Date.now()
+      playerId : Date.now(),
     };
 
     this.video = {
       muted : false
     };
+
+    this.fragment = 0;
+    this.loaded = false;
   }
 
   componentDidUpdate () {
@@ -58,23 +61,36 @@ class Player extends React.Component {
   }
 
   _initPlayer () {
+    if(!this.loaded) {
+      axios.get("http://145.49.13.101:8080/stream/mediaSequence?stream=0")
+        .then(res => {
+          this.fragment = res.data.mediaSequence;
+          console.log(this.fragment);
+          this.loaded = true;
+          this.setState({fragment: res.data.mediaSequence})
+        }).catch(err => {
+          throw err;
+      });
+    }
+
     let {video: $video} = this.refs;
 
-    axios.get("http://145.49.13.101:8080/stream/mediaSequence?stream=0").then(res => {
-      console.log(res);
-      fragment = res.data.mediaSequence
-    });
-    console.log(fragment);
-
-    $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + fragment;
+    $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
     $video.poster = "/assets/offline.png";
     $video.autoplay = true;
 
+    $video.addEventListener('error', error => {
+      // $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
+      $video.poster = "/assets/offline.png";
+      // this.fragment++;
+    });
+
     $video.addEventListener('ended', data => {
-      fragment++;
+      // console.log(data);
+      this.fragment++;
       $video.poster = null;
-      console.log(fragment);
-      $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + fragment;
+      $video.src = "http://145.49.13.101:8080/stream/fragment.mp4?stream=0&mediaSequence=" + this.fragment;
+
     });
   }
 
