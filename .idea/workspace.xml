@@ -1,92 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="Added new kind of player. And travis support I hope">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/400_400-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/assets/600_400-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/adellecharles-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/adhamdannaway-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/allisongrayce-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/angelceballos-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/chexee-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/jsa-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/kerem-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/kolage-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/ok-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/raquelromanp-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/avatars/uxceo-128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1438893761775-f1db119d27b2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1450101499163-c8848c66ca85.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1455813870877-04a32045af63.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1456374407032-6e4baf58fb62.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-1458324124043-7803d4fec380.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/covers/photo-imNop2O1Rit190cSkxXv_1-7069.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/diamond.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/imac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/package.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/image-icons/target.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-edition-red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/products/watch-sport-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images-demo/style_typography_roboto1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/background/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/background/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/bg-pattern9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/bg-pattern/logo_x_pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/g1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/b2afaf2b30718b2e6a2501a74ee91d02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/0.844b0ed7f182ada829e6.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/0.844b0ed7f182ada829e6.chunk.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/1.844b0ed7f182ada829e6.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/1.844b0ed7f182ada829e6.chunk.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/2.844b0ed7f182ada829e6.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/2.844b0ed7f182ada829e6.chunk.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/3.844b0ed7f182ada829e6.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/3.844b0ed7f182ada829e6.chunk.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/app.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/images/audio.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/loader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.ijmap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/MaterialIcons-Regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/codepoints" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/material-design-icons/iconfont/material-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/vendors/webfontloader/webfontloader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="a0abd858-fe4a-4cf0-9d68-9b28e0a64881" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/offline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/trailer.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/assets/react.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -147,7 +65,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="480">
               <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
@@ -303,6 +221,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesquare.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -319,6 +301,7 @@
       <recent name="D:\Sites\thesquare.me\src\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/assets" />
       <recent name="$PROJECT_DIR$/src/components/VideoBox" />
       <recent name="D:\Sites\thesquare.me\src\lib" />
     </key>
@@ -565,7 +548,7 @@
       <workItem from="1497122817335" duration="190000" />
       <workItem from="1497123249061" duration="2653000" />
       <workItem from="1497859248858" duration="3630000" />
-      <workItem from="1497866241236" duration="42740000" />
+      <workItem from="1497866241236" duration="43020000" />
     </task>
     <task id="LOCAL-00001" summary="Started on the register/login page.">
       <created>1497028975625</created>
@@ -679,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498036202559</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ADDED dist need alot of cleean up">
+      <created>1498037715890</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1498037715890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108476000" />
+    <option name="totallyTimeSpent" value="108756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -731,7 +721,8 @@
     <MESSAGE value="Changed/Add some things" />
     <MESSAGE value="Added chat implementation." />
     <MESSAGE value="Added new kind of player. And travis support I hope" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new kind of player. And travis support I hope" />
+    <MESSAGE value="ADDED dist need alot of cleean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED dist need alot of cleean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,7 +1048,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="480">
           <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
