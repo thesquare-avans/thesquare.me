@@ -3,12 +3,7 @@ import Header from 'components/Header';
 import Sidenav from 'components/Sidenav';
 import Footer from 'components/Footer';
 import QueueAnim from 'rc-queue-anim';
-import axios from 'axios';
-import TranstportSecurity from "../../../lib/TranstportSecurity";
 import Status from "../../../lib/Status";
-
-let data = {};
-const BASE_URL = "http://api.thesquare.me/v1";
 
 const Box = (props) => (
   <div className="col-xl-4">
@@ -93,12 +88,6 @@ const Box = (props) => (
       </div>
     </div>
     }
-  </div>
-)
-
-const Main = (props) => (
-  <div>
-
   </div>
 );
 

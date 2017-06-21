@@ -9,14 +9,15 @@ import {hashHistory} from "react-router";
 class settings extends React.Component {
 
   deleteIdentity() {
-    confirm("Are you sure?", () => {
+
+    if(confirm("Are you sure?")) {
       localStorage.removeItem("name");
       localStorage.removeItem("privateKey");
       localStorage.removeItem("publicKey");
       localStorage.removeItem("user");
 
       hashHistory.push("/login");
-    });
+    }
   }
 
   downloadConfig(){
@@ -54,10 +55,8 @@ class settings extends React.Component {
     return (
       <div className="main-app-container">
         <Sidenav />
-
         <section id="page-container" className="app-page-container">
           <Header />
-
           <div className="app-content-wrapper">
             <div className="app-content">
               <div className="full-height">
@@ -69,8 +68,12 @@ class settings extends React.Component {
                           User Account
                         </div>
                         <div className="box-body">
-                          <RaisedButton label="Download Identity" style={{margin: 5}} onTouchTap={this.downloadConfig.bind(this)}/>
-                          <RaisedButton label="Delete Identity" style={{margin: 5}} onTouchTap={this.deleteIdentity.bind(this)}/>
+                          <div className="row">
+                            <div className="col-xl-12">
+                              <RaisedButton label="Download Identity" style={{margin: 5}} onTouchTap={this.downloadConfig.bind(this)}/>
+                              <RaisedButton label="Remove Identity from the browser" style={{margin: 5}} onTouchTap={this.deleteIdentity.bind(this)}/>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -78,7 +81,6 @@ class settings extends React.Component {
                 </div>
               </div>
             </div>
-
             <Footer />
           </div>
         </section>

@@ -66,9 +66,7 @@ class Login extends React.Component {
       }
     } else
       TransportSecurity.checkIfUserExists(function (err) {
-        if (err) {
-          console.log("There was a error");
-        } else {
+        if (!err) {
           hashHistory.push('/home')
         }
       });

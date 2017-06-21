@@ -87,11 +87,10 @@ $margin : 5px;
           list-style: none;
           padding: 0;
 
-          height: auto;
+          height: 100% !important;
 
           min-height: 17.5em;
-          max-height: 20em;
-
+          max-height: 27.5em;
           //overflow-y: auto;
 
           > li.me {

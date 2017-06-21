@@ -49,13 +49,13 @@ let StreamsArray = [
   },
 ];
 
+let id = 0;
+
 const StreamBox = () => (
   <div>
     <div className="row">
       <div className="col-xl-7 row-eq-height">
-        <Player controls={true} mute={false} streamId={"0"} />
-        {/*<ReactHLS url={"https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8"} />*/}
-        {/*<ReactHLS autoplay url={"https://video-edge-c61bc8.ams02.hls.ttvnw.net/v0/CvoBCOaCBbuKbzqIX-7hbrsyo6L99UDfKJ7c-22ZMvmF2ws_8htFEUOh_cJzaRPR0HzZKSfnFQozSDeoMdnk5p_1CSHchBJciNss4C6rVS1w69ramf2axOShJQAIJRVwCMAxarvA1nSpR9p8-rM5RmvKpC3n6LK0tCoGGTtZ6dm2BJwMUoIvM7G6jgtWldpsyrX8IZ9iggA2OLRD9v4E8nAJTX_yrweTYRzhoh1o-yhbFaikuHdyUg9CFNevX3hn8aKEnWnerJxFW8Qx7GuorDIA0lgeTUQcIvIoYgHZOq47l835G0BkbHZ4ue-6CtqC-UgfMAHQPTXog5sg7hIQs3HFZPFwnJPRb8lF_4sbMBoMPWZHXRLxarp2gd1M/index-live.m3u8"} />*/}
+        <Player controls={true} mute={false} streamId={0} />
       </div>
       <div className="col-xl-5 row-eq-height">
         <ChatBox stream={"0"} streamId={"dc83e75f-b47a-4793-8232-94ae0f337d91"} streamServer={"http://bart.chat.thesquare.me"}/>
@@ -63,11 +63,13 @@ const StreamBox = () => (
     </div>
     <div className="row">
       {StreamsArray.map(stream => {
+        id++;
         return (
           <div className="col-xl-3 " key={stream.id}>
-            <VideoPlayer autoPlay loop muted>
-              <source src={stream.source.url} type={stream.source.type} />
-            </VideoPlayer>
+            <Player controls={true} mute={false} streamId={id} />
+            {/*<VideoPlayer autoPlay loop muted>*/}
+              {/*<source src={stream.source.url} type={stream.source.type} />*/}
+            {/*</VideoPlayer>*/}
           </div>
         )}
       )}

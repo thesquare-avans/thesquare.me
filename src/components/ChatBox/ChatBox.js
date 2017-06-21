@@ -8,11 +8,9 @@ import axios from 'axios';
 const BASE_URL = "http://api.thesquare.me/v1";
 
 let stream = null;
-
 let messages = [];
-
-let user = null;
 let cachedUsers = [];
+
 const styles = {
   button : {
     floatingLabelFocusStyle: {
@@ -36,8 +34,7 @@ class ChatBox extends React.Component {
     super(props);
     this.server = io(props.streamServer);
 
-    stream = props.streamId
-    //this.connect();
+    stream = props.streamId;
 
     this.state = {
       chat_text: "",
@@ -77,10 +74,14 @@ class ChatBox extends React.Component {
   }
 
   sendOwnMessage(msg) {
-    let item = (<ChatItem className="me" text={msg} username="You" key={messages.length + 1}/>);
+    let item = (<ChatItem className="me" text={msg} username="You" key={Date.now()}/>);
 
     this.setState((prevState) => { prevState.messages.push(item)});
-    this.setState({chat_text: ""})
+    this.setState({chat_text: ""});
+
+    if(this.state.messages.length >= 20) {
+      this.setState((prevState) => { prevState.messages.shift() });
+    }
   }
 
   sendMessage(msg) {
@@ -97,11 +98,12 @@ class ChatBox extends React.Component {
     let pl = TransportSecurity.verifyMessage(user);
     if(pl && pl.success) {
       let message = TransportSecurity.verifyMessageExternal(data.data.data, pl.user.publicKey);
-      let item = (<ChatItem className="them" text={message.message} username={pl.user.name} key={messages.length + 1}/>);
+      let item = (<ChatItem className="them" text={message.message} username={pl.user.name} key={Date.now()}/>);
       this.setState((prevState) => { prevState.messages.push(item) });
-      // if(this.state.messages.length >= 20 ) {
-      //   this.state.messages.shift();
-      // }
+
+      if(this.state.messages.length >= 20) {
+        this.setState((prevState) => { prevState.messages.shift() });
+      }
     }
   }
 
@@ -165,7 +167,7 @@ class ChatBox extends React.Component {
         <div className="box-body chat">
           <div className="row">
             <div className="col-xl-12">
-              <ul className="chatBox" style={{ padding: 0, overflowY: "scroll" }}>
+              <ul className="chatBox" ref={"chatBox"} style={{ padding: 0, overflowY: "scroll" }}>
                 {this.state.messages.map(msg => { return(msg) })}
               </ul>
               <Divider />
