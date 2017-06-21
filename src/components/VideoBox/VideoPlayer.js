@@ -24,7 +24,6 @@ const style = {
 };
 
 const VideoPlayer = ({ video, videoEl, children, ...restProps }) => (
-
   <div className="box box-default">
     <div className="box-body video">
 

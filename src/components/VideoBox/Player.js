@@ -10,6 +10,8 @@ import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import {green500} from 'material-ui/styles/colors'
 
+let fragment = 0;
+
 let metadata = {
   user : "Thomas",
   viewers : 100,
@@ -24,7 +26,7 @@ const style = {
   }
 };
 
-class ReactHls extends React.Component {
+class Player extends React.Component {
   constructor (props) {
     super(props);
 
@@ -33,14 +35,12 @@ class ReactHls extends React.Component {
     };
 
     this.video = {
-      muted : true
+      muted : false
     };
-
-    this.hls = null;
   }
 
   componentDidUpdate () {
-    this._initPlayer();
+    //this._initPlayer();
 
     //this.video = this.refs.video;
   }
@@ -52,56 +52,22 @@ class ReactHls extends React.Component {
   }
 
   componentWillUnmount () {
-    let { hls } = this;
 
-    if (hls) {
-      hls.destroy();
-    }
   }
 
   _initPlayer () {
-    if (this.hls) {
-      this.hls.destroy();
-    }
+    let {video: $video} = this.refs;
 
-    let { url, autoplay, hlsConfig } = this.props;
-    let { video : $video } = this.refs;
-    let hls = new Hls(hlsConfig);
-
-    hls.detachMedia();
-    hls.loadSource(url);
-    hls.attachMedia($video);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      if (autoplay) {
-        $video.play();
-      }
-
-      if(this.video.muted) {
-        $video.muted = this.video.muted;
-      }
+    $video.src = "http://localhost:8000/assets/trailer.webm";
+    $video.poster = "/assets/offline.png";
+    $video.autoplay = true;
+    console.log(fragment);
+    $video.addEventListener('ended', data => {
+      fragment++;
+      $video.poster = null;
+      console.log(fragment);
+      $video.src = "http://145.49.13.101:8080/fragment=" + fragment;
     });
-
-    hls.on(Hls.Events.ERROR, function (event, data) {
-      if (data.fatal) {
-        switch (data.type) {
-          case Hls.ErrorTypes.NETWORK_ERROR:
-            // when try to recover network error
-            console.log("fatal network error encountered, try to recover");
-            hls.startLoad();
-            break;
-          case Hls.ErrorTypes.MEDIA_ERROR:
-            console.log("fatal media error encountered, try to recover");
-            hls.recoverMediaError();
-            break;
-          default:
-            // when cannot recover
-            hls.destroy();
-            break;
-        }
-      }
-    });
-
-    this.hls = hls;
   }
 
   render () {
@@ -126,24 +92,23 @@ class ReactHls extends React.Component {
 
             </div>
             <div className="bottom-right">
-              {/*<FloatingActionButton*/}
-                {/*mini={true}*/}
-                {/*backgroundColor={style.floatButtonMute.backgroundColor}*/}
-                {/*onTouchTap={function (e) {*/}
-                  {/*e.preventDefault();*/}
-                  {/*this.refs*/}
-                {/*}}*/}
-              {/*>*/}
-                {/*{this.video.muted && <AvVolumeOff />}*/}
-                {/*{!this.video.muted && <AvVolumeUp />}*/}
-              {/*</FloatingActionButton>*/}
+              <FloatingActionButton
+                mini={true}
+                backgroundColor={style.floatButtonMute.backgroundColor}
+                onTouchTap={function (e) {
+                  e.preventDefault();
+                }}
+              >
+                {this.video.muted && <AvVolumeOff />}
+                {!this.video.muted && <AvVolumeUp />}
+              </FloatingActionButton>
             </div>
           </div>
           <video ref="video"
                  id={`react-hls-${playerId}`}
                  controls={controls}
                  width={width}
-                 height={height} poster="/assets/offline.png">
+                 height={height}>
             {/*{children}*/}
           </video>
         </div>
@@ -163,21 +128,8 @@ class ReactHls extends React.Component {
   }
 }
 
-ReactHls.propTypes = {
-  url : PropTypes.string.isRequired,
-  autoplay : PropTypes.bool,
-  hlsConfig : PropTypes.object, //https://github.com/dailymotion/hls.js/blob/master/API.md#fine-tuning
-  controls : PropTypes.bool,
-  width : PropTypes.number,
-  height : PropTypes.number
-}
+Player.propTypes = {
+  streamId : PropTypes.string.isRequired,
+};
 
-ReactHls.defaultProps = {
-  autoplay : false,
-  hlsConfig : {},
-  controls : true,
-  width : 500,
-  height : 375
-}
-
-module.exports = ReactHls;
+module.exports = Player;
